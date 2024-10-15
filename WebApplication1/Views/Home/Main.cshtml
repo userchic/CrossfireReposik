@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Main";
+}
+<h2>Главная</h2>
+<table class="bc-table bc-table-web" width="60%" align="center" border="1">
+    <thead>
+        <tr>
+            <th align="center" >Название игры</th>
+            <th align="left" style="width: 75px;">Дата начала</th>
+            <th align="right" style="width: 50px;">Время начала</th>
+            <th align="right" style="width: 50px;">Длительность(мин)</th>
+            @if (WebApplication3.Controllers.HomeController.user.Role == "Игрок")
+            {
+                <th align="right" style="width: 30px;"></th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (WebApplication3.Models.Game line in WebApplication3.Controllers.HomeController.db.Games)
+        {
+        <tr>
+            <td align="left">@line.GameName</td>
+            <td align="center">@line.StartData.Day.@line.StartData.Month.@line.StartData.Year</td>
+            <td align="left">@line.StartTime.Hour:@line.StartTime.Minute</td>
+            <td align="left">@line.Lenga</td>
+            @if (WebApplication3.Controllers.HomeController.user.Role == "Игрок")
+            {
+                using (Html.BeginForm("Play", "Gamer"))
+                {
+                    <td align="right">
+                        @Html.Hidden("GameID", line.ID)
+                        <input class="btn btn-default" type="submit" value="Играть" />
+                    </td>
+                }
+            }
+        </tr>
+        }
+    </tbody>
+</table>
+

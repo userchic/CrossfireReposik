@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication4</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script>
+        function settimer() {
+            if (document.title !== "Results") {
+                setInterval(function () {
+                    let seconds = document.getElementById("seconds");
+                    let minutes = document.getElementById("time");
+                    if (Number.parseInt(seconds.value) > 0)
+                        seconds.value = Number.parseInt(seconds.value) - 1;
+                    else {
+                        if (seconds.value !== null & seconds.value !== "")
+                            $.ajax({
+                                url: "/Game/EnemySendAnswer",
+                                success: function (result) {
+                                    document.getElementById("PlayerScore").innerText = result["PScore"];
+                                    document.getElementById("EnemyScore").innerText = result["EScore"];
+                                },
+                                type: "POST",
+                                datatype: "json"
+                            })
+                        seconds.value = 59;
+                        minutes.innerText = Number.parseInt(minutes.innerText) - 1;
+                        if (Number.parseInt(minutes.innerText) === 0) {
+                            document.location.href = "/Game/ShowResults";
+                        }
+                    }
+                }, 1000)
+            };
+        }
+    </script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li> @Html.ActionLink("Отказаться от игры", "Main", "Home") </li>
+                    <li style="width:150px"> <br /><font color="white">Ваши очки:</font> <font id="PlayerScore" color="white" width="50px"> @WebApplication3.Controllers.GamerController.game.Player.Score        </font></li>
+                    <li style="width:150px"><br /><font color="white">Очки противника: </font><font id="EnemyScore" color="white"> @WebApplication3.Controllers.GamerController.game.RNG.Score         </font> </li>
+                    <li style="width:150px"><br /><font color="white">Оставшееся время: </font><font id="time" color="white">  @WebApplication3.Controllers.GamerController.GameLenga  </font><font color="white">мин </font></li>
+                    @Html.Hidden("seconds", WebApplication3.Controllers.GamerController.Seconds)
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>settimer();</script>
+    <div class="container body-content">
+        <br />
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - мое приложение ASP.NET</p>
+        </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+

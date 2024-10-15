@@ -1,0 +1,70 @@
+﻿@model WebApplication3.Models.GameTask
+@{
+    Layout = "~/Views/Shared/_Layout_Game.cshtml";
+}
+@{
+    ViewBag.Title = "Answer";
+}
+<script>
+    function CancelAnswer() {
+        const seconds = document.getElementById("seconds").value
+        const minutes = document.getElementById("time").innerText
+        $(document).ready(function () {
+            $.ajax({
+                url: "Game/CancelAnswer",
+                dataType: 'json',
+                type: 'GET',
+                contentType: 'application/json;',
+                data: { time: minutes, seconds: seconds },
+                success:
+                    location.href = "/Gamer/CancelAnswer?time=" + minutes + "&seconds=" + seconds
+            })
+        })
+    }
+</script>
+<script>
+    function SendAnswer() {
+        const seconds = document.getElementById("seconds").value
+        const minutes = document.getElementById("time").innerText
+        const Answer = document.getElementById("SentAnswer").value
+        if (Answer !== "") {
+            if (@WebApplication3.Controllers.GamerController.game.Player.SolvedTasks+@WebApplication3.Controllers.GamerController.game.Player.MistakedTasks < @WebApplication3.Controllers.GamerController.game.Tasks.Count-1) {
+                XMLHttpRequest. $.ajax({
+                    url: "/Gamer/SendAnswer",
+                    success: function (result) {
+                        document.getElementById("PlayerScore").innerText = result["PScore"];
+                        document.getElementById("EnemyScore").innerText = result["EScore"];
+                    },
+                    type: "POST",
+                    datatype: "json",
+                    data: { time: minutes, seconds: seconds, SentAnswer: Answer },
+                })
+                location.href = "/Gamer/Game"
+            }
+            else {
+                    $.ajax({
+                        url: "/Gamer/SendAnswer",
+                        dataType: 'json',
+                        type: 'POST',
+                        data: { time: minutes, seconds: seconds, SentAnswer: Answer }
+                    })
+                $.ajax({
+                    url: "/Game/ShowResults",
+                    dataType: 'json',
+                    type: 'POST',
+                    success:
+                        location.href = "/Gamer/ShowResults"
+                })
+            }
+        }
+        else
+            document.getElementById("Message").innerText="Строка пуста, введите свой ответ"
+    }
+</script>
+<h2>Answer</h2>
+    Текст задачи:<p> @WebApplication3.Controllers.GamerController.Task.Text</p>
+    Ответ:<p>  @Html.TextBoxFor(model => model.SentAnswer)</p>
+    <font color="red" id="Message"><p>@ViewBag.Message</p></font>
+    <br />
+    <input class="btn btn-default" type="submit" onclick="SendAnswer()" value="Отправить ответ" />
+    <input class="btn btn-default" type="submit" name=" action" onclick="CancelAnswer()" value="Cancel" />

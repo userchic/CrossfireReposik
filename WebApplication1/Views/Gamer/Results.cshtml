@@ -1,0 +1,68 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout_Game.cshtml";
+}
+@{
+    ViewBag.Title = "Results";
+}
+@{ if (WebApplication3.Controllers.GamerController.game.Player.Score > WebApplication3.Controllers.GamerController.game.RNG.Score)
+    { <h1>Победа</h1> }
+    else
+    {
+        if (WebApplication3.Controllers.GamerController.game.Player.Score < WebApplication3.Controllers.GamerController.game.RNG.Score)
+        { <h1>Поражение</h1> }
+        else
+        { <h1>Ничья</h1>}
+    }
+}
+<table class="bc-table bc-table-web" width="45%" align="center">
+    <thead>
+        <tr>
+            <th align="center">Вы</th>
+            <th align="center">Противник</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="left">
+                <div class="container" title="Вы">
+                    <p>Накопленный результат: @WebApplication3.Controllers.GamerController.game.Player.Score
+                    <p>
+                        Задач: @WebApplication3.Controllers.GamerController.game.Tasks.Count
+                        <div class="container" title="Решено">
+                            <p>Решено верно:  @WebApplication3.Controllers.GamerController.game.Player.SolvedTasks
+                            <p>Решено неверно: @WebApplication3.Controllers.GamerController.game.Player.MistakedTasks
+                        </div>
+                    <p>Нет ответа: @{int num = WebApplication3.Controllers.GamerController.game.Tasks.Count - WebApplication3.Controllers.GamerController.game.Player.SolvedTasks - WebApplication3.Controllers.GamerController.game.Player.MistakedTasks;}@num
+                    <p>
+                        Выстрелов:@WebApplication3.Controllers.GamerController.game.Player.Shots
+                        <div class="container" title="Решено">
+                            <p>Попаданий: @WebApplication3.Controllers.GamerController.game.Player.Hits
+                            <p>Промахов: @WebApplication3.Controllers.GamerController.game.Player.Misses
+                        </div>
+                </div>
+            </td>
+            <td align="left">
+                <div class="container" title="Враг">
+                    <p>Накопленный результат: @WebApplication3.Controllers.GamerController.game.RNG.Score</p>
+                    <p>Задач: @WebApplication3.Controllers.GamerController.game.Tasks.Count</p>
+                    <div class="container" title="Решено">
+                        <p>Решено верно:  @WebApplication3.Controllers.GamerController.game.RNG.SolvedTasks</p>
+                        <p>Решено неверно: @WebApplication3.Controllers.GamerController.game.RNG.MistakedTasks</p>
+                    </div>
+                    <p>Нет ответа: @{num = WebApplication3.Controllers.GamerController.game.Tasks.Count - WebApplication3.Controllers.GamerController.game.RNG.SolvedTasks - WebApplication3.Controllers.GamerController.game.RNG.MistakedTasks;}@num</p>
+                    <p>Выстрелов:@WebApplication3.Controllers.GamerController.game.RNG.Shots</p>
+                    <div class="container" title="Решено">
+                        <p>Попаданий: @WebApplication3.Controllers.GamerController.game.RNG.Hits</p>
+                        <p>Промахов: @WebApplication3.Controllers.GamerController.game.RNG.Misses</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+@using (Html.BeginForm("Main", "Home"))
+{ <button type="submit" value="Вернуться на главную" />}
+
+

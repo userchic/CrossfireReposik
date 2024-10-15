@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout_Game.cshtml";
+}
+@{
+    ViewBag.Title = "Game";
+}
+<script>
+    function ClickTask(ID) {
+        const seconds = document.getElementById("seconds").value;
+        if (seconds === "") { seconds = 59; }
+        const minutes = document.getElementById("time").innerText;
+        HTMLDialogElement.call()
+        location.href = "/Gamer/Answer?ID=" + ID + "&minutes=" + minutes + "&seconds=" + seconds
+    };
+</script>
+<table width="90%" align="center">
+    <thead>
+        <tr>
+            <th align="left">Текст задачи</th>
+            <th align="center">Отправить ответ</th>
+            <th align="center">Решённость задачи</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (WebApplication3.Models.GameTask line in WebApplication3.Controllers.GamerController.game.Tasks)
+        {
+            <tr>
+                <td align="left">@line.Text</td>
+                <td align="center">
+                    @if (line.Result == "Не решено")
+                    {
+                        <button class="btn btn-default" type="button" onclick="ClickTask('@line.ID')">Отправить ответ</button >
+                    }
+                    else
+                    {
+                        <button class="btn btn-default" type="button" onclick="ClickTask('@line.ID')"  disabled >Отправить ответ</button>
+                    }
+                </td>
+                <td align="center">
+                    <p>@line.Result</p>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

@@ -1,0 +1,37 @@
+﻿@model WebApplication3.Models.Game
+@{
+    ViewBag.Title = "GameMake";
+}
+<h2>Создание игры</h2>
+<div class="container">
+    @using (Html.BeginForm("AddGameClick", "Admin", FormMethod.Post))
+    {
+        <input id="GameName" name="GameName" placeholder="Название игры" type="text" autocomplete="on">
+
+        <br />
+        <div>Дата проведения</div>
+        <input name=StartData data-val="true" data-val-date="Поле StartData должно содержать дату." data-val-required="Требуется поле StartData."
+               id="StartData"  placeholder="Дата проведения" type="date" autocomplete="on" value=@DateTime.Now><br />
+        <div>Длительность (мин)</div>
+        
+        <input id="Login" name="Login" placeholder="Логин" type="text">
+        @Html.TextBoxFor(model => model.Lenga, new { @placeholder = "Длительность", @value = @Model.Lenga, @autocomplete = "on", @type = "number" })
+        <p>
+            Время начала
+            <input type="time" name="StartTime" autocomplete="on">
+        </p>
+        <button type="submit">Создать игру</button>
+    }
+    @using (Html.BeginForm("AddTask", "Admin"))
+    {
+        <button type="submit">Добавить задачу</button>
+    }
+    <div>Создано задач: @Model.Tasks.Count</div>
+    <font color="red"><p>@ViewBag.Message</p></font>
+
+    @using (Html.BeginForm("CancelMakeGame", "Admin"))
+    {
+        <button type="submit" name="action" value="Cancel">Отмена</button>
+    }
+</div>
+
