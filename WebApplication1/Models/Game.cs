@@ -12,10 +12,14 @@ namespace WebApplication3.Models
         public DateTime StartTime { get; set; }
         public int Lenga { get; set; }
         public int ID { get; set; }
-        public ICollection<Tasks> Tasks { get; set; }
+        public ICollection<UserParticipation> UserParticipation { get; set; }
+        public ICollection<GameTask> GameTasks { get; set; }
+        public ICollection<Teams> Teams { get; set; }
         public Game()
         {
-            Tasks = new List<Tasks>();
+            UserParticipation= new List<UserParticipation>();
+            GameTasks = new List<GameTask>();
+            Teams = new List<Teams>();
         }
     }
 }

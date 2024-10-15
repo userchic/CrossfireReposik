@@ -19,7 +19,7 @@ namespace WebApplication3.Controllers
         static Random rand2 = new Random();
         public static int GameLenga { get; set; }
         public static int Seconds { get; set; }
-        public static GameTask Task { get; set; }
+        public static InGameTask Task { get; set; }
         public GamerController(GameContext context)
         {
             db = context;
@@ -37,12 +37,12 @@ namespace WebApplication3.Controllers
         {
             int ID = int.Parse(GameID);
             Game g = db.Games.FirstOrDefault(game => game.ID == ID);
-            game = new GameProcess() { Tasks = new List<GameTask>() };
+            game = new GameProcess() { Tasks = new List<InGameTask>() };
             GameLenga=g.Lenga;
             Seconds=60;
             var req=db.Tasks.Select(x=>x).Where(x=>x.GameId==ID);
             foreach (var task in req)
-                game.Tasks.Add(new GameTask() { Text = task.Text, Answer = task.Answer, Result = "Не решено", ID = task.ID });
+                game.Tasks.Add(new InGameTask() { Text = task.Text, Answer = task.Answer, Result = "Не решено", ID = task.ID });
 
             return View("Game", game);
         }

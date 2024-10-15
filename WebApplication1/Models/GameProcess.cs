@@ -9,7 +9,7 @@ namespace WebApplication3.Models
     public class GameProcess
     {
         public int ID { get; set; }
-        public List<GameTask> Tasks;
+        public List<InGameTask> Tasks;
         public InGameUser Player = new InGameUser();
         public InGameUser RNG = new InGameUser();
     }

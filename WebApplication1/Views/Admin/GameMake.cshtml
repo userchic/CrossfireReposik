@@ -13,25 +13,25 @@
         <input name=StartData data-val="true" data-val-date="Поле StartData должно содержать дату." data-val-required="Требуется поле StartData."
                id="StartData"  placeholder="Дата проведения" type="date" autocomplete="on" value=@DateTime.Now><br />
         <div>Длительность (мин)</div>
-        
-        <input id="Login" name="Login" placeholder="Логин" type="text">
-        @Html.TextBoxFor(model => model.Lenga, new { @placeholder = "Длительность", @value = @Model.Lenga, @autocomplete = "on", @type = "number" })
+
+        <input id="Lenga" name="Lenga" value="0" placeholder="Длительность" type="number" autocomplete="on">
         <p>
             Время начала
-            <input type="time" name="StartTime" autocomplete="on">
+            <input type="time" id="StartTime" name="StartTime" autocomplete="on">
         </p>
         <button type="submit">Создать игру</button>
+        <button type="reset" name="action" value="Cancel">Отмена</button>
     }
     @using (Html.BeginForm("AddTask", "Admin"))
     {
         <button type="submit">Добавить задачу</button>
     }
     <div>Создано задач: @Model.Tasks.Count</div>
-    <font color="red"><p>@ViewBag.Message</p></font>
-
     @using (Html.BeginForm("CancelMakeGame", "Admin"))
     {
-        <button type="submit" name="action" value="Cancel">Отмена</button>
+        <button type="submit" >Удалить задачи</button>
     }
+    <font color="red"><p>@ViewBag.Message</p></font>
+
 </div>
 

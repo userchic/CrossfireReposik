@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,8 +14,16 @@ namespace WebApplication3.Models
         public string Surname { get; set; }
         public string Fatname { get; set; }
         public DateTime RegDate { get; set; }
-        public string Role { get; set; }
+        public int RoleID { get; set; }
+        public Role Role { get; set; } 
         public int Class { get; set; }
+        public ICollection<UserParticipation> UserParticipation { get; set; }
+        public ICollection<UserTeam> UserTeams { get; set; }
         public int ID { get; set; }
+        public Users()
+        {
+            UserParticipation=new List<UserParticipation>();
+            UserTeams=new List<UserTeam>();
+        }
     }
 }

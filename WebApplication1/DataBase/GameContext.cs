@@ -14,6 +14,13 @@ namespace WebApplication3.DataBase
         public DbSet<Tasks> Tasks { get; set; }
         public DbSet<Sent_Answers> UsersAnswers { get; set; }
         public DbSet<Game> Games { get; set; }
+        public DbSet<GameTask> GameTasks { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Shots> Shots { get; set; }
+        public DbSet<UserGameStatus> UserGameStatuses { get; set; }
+        public DbSet<UserTeam> UserTeams { get; set; }
+        public DbSet<Teams> Teams { get; set; }
+        public DbSet<UserParticipation> Participations { get; set; }
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
         //    modelBuilder.Entity<Users>().HasData(

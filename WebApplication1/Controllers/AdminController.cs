@@ -13,7 +13,7 @@ namespace WebApplication3.Controllers
     [Authorize(Roles ="Администратор")]
     public class AdminController : Controller
     {
-        public static Game CurrentGame = new Game() { Tasks = new List<Tasks>() };
+        public static Game CurrentGame = new Game() ;
 
         public static GameContext db;
         static Random rand1 = new Random();
@@ -36,7 +36,7 @@ namespace WebApplication3.Controllers
         }
         public ActionResult CancelMakeGame()
         {
-            CurrentGame = new Game() { Tasks = new List<Tasks>() };
+            CurrentGame = new Game();
             return View("GameMake", CurrentGame);
         }
         public ActionResult AddTask(Game model)
@@ -77,7 +77,7 @@ namespace WebApplication3.Controllers
             }
             else
             {
-                CurrentGame.Tasks.Add(new Tasks() { Answer = Answer, Text = Text });
+                db.Tasks.Add(new Tasks() { Answer = Answer, Text = Text });
                 ViewBag.Message2 = "Задача создана!";
                 return View("TaskMake", new Tasks());
             }
