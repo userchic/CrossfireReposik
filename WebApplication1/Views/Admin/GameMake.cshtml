@@ -1,4 +1,4 @@
-﻿@model WebApplication3.Models.Game
+﻿@model WebApplication1.Models.Game
 @{
     ViewBag.Title = "GameMake";
 }
@@ -21,17 +21,22 @@
         </p>
         <button type="submit">Создать игру</button>
         <button type="reset" name="action" value="Cancel">Отмена</button>
-    }
-    @using (Html.BeginForm("AddTask", "Admin"))
-    {
-        <button type="submit">Добавить задачу</button>
-    }
-    <div>Создано задач: @Model.Tasks.Count</div>
-    @using (Html.BeginForm("CancelMakeGame", "Admin"))
-    {
-        <button type="submit" >Удалить задачи</button>
-    }
-    <font color="red"><p>@ViewBag.Message</p></font>
+        <font color="red"><p>@ViewBag.Message</p></font>
+        <h1>Выберить задачи</h1>
+        <ul>
+            @foreach (WebApplication1.Models.Tasks task in WebApplication1.Controllers.HomeController.db.Tasks)
+            {
+                <li>
+                    <div>Текст задачи: @task.Text</div>
+                    <br />
+                    <div>Ответ:@task.Answer</div>
+                    <br />
+                    @Html.Hidden("TaskID", task.ID)
+                    <input type="checkbox" name="tasks" />
+                </li>
+            }
 
+            </ul>
+    }
 </div>
 

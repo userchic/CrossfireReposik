@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebApplication3.Models
+namespace WebApplication1.Models
 {
     public class Sent_Answers
     {
@@ -12,6 +12,7 @@ namespace WebApplication3.Models
         public int? TaskID { get; set; }
         public int? UserID { get; set; }
         public int? TeamID { get; set; }
+        public int? ShotID { get; set; }
         public DateTime SentTime { get; set; }
         public Tasks Task { get; set; }
         public Users User { get; set; }

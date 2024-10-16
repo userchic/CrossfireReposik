@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+<h1>Регистрация</h1>
+<div class="container">
+    @using (Html.BeginForm("RegisterClick", "Home", FormMethod.Post))
+    {
+        <input id="Login" name="Login" placeholder="Логин" type="text">
+        <br />
+        <input id="Password" name="Password" placeholder="Пароль" type="password">
+        <br />
+        <input id="Name" name="Name" placeholder="Имя" type="text">
+        <br />
+        <input id="Surname" name="Surname" placeholder="Фамилия" type="text">
+        <br />
+        <input id="FatName" name="FatName" placeholder="Отчество" type="text">
+        <br />
+        <select id="Role" name="Role" class="combo">
+            <option value="Администратор">Администратор</option>
+            <option value="Игрок">Игрок</option>
+        </select>
+        <font color="red"><p>@ViewBag.Message</p></font>
+        <input type="submit" style="text-align:center;" value="Вход">
+    }
+</div>

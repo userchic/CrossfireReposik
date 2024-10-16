@@ -1,11 +1,12 @@
-﻿namespace WebApplication3.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebApplication1.Models
 {
     public class UserParticipation
     {
-        public int UserID { get; set; }
+        public int ID { get; set; }
         public int GameID { get; set; }
-        public string? StatusID { get; set; }
-        public UserGameStatus Status { get; set; }
+        public UserGameStatus UserGameStatus { get; set; }
         public Game Game { get; set; }
         public Users User { get; set; }
     }

@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace WebApplication3.Models
+namespace WebApplication1.Models
 {
     public class Users
     {
+
         public string Login { get; set; }
         public string Password { get; set; }
         public string Name { get; set; }
@@ -16,14 +17,19 @@ namespace WebApplication3.Models
         public DateTime RegDate { get; set; }
         public int RoleID { get; set; }
         public Role Role { get; set; } 
-        public int Class { get; set; }
+        public int ClassID { get; set; }
+        public Class Class { get; set; }
         public ICollection<UserParticipation> UserParticipation { get; set; }
-        public ICollection<UserTeam> UserTeams { get; set; }
-        public int ID { get; set; }
+        public ICollection<Teams> Teams { get; set; }
         public Users()
         {
             UserParticipation=new List<UserParticipation>();
-            UserTeams=new List<UserTeam>();
+            Teams=new List<Teams>();
+        }
+
+        public static Users Create(string login, string password, string name, string surName, string fatName, int role)
+        {
+            return new Users { Login = login, Password = password, Name = name, Surname = surName, Fatname = fatName, RoleID = role };
         }
     }
 }

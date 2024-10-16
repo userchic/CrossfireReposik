@@ -50,10 +50,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li> @Html.ActionLink("Отказаться от игры", "Main", "Home") </li>
-                    <li style="width:150px"> <br /><font color="white">Ваши очки:</font> <font id="PlayerScore" color="white" width="50px"> @WebApplication3.Controllers.GamerController.game.Player.Score        </font></li>
-                    <li style="width:150px"><br /><font color="white">Очки противника: </font><font id="EnemyScore" color="white"> @WebApplication3.Controllers.GamerController.game.RNG.Score         </font> </li>
-                    <li style="width:150px"><br /><font color="white">Оставшееся время: </font><font id="time" color="white">  @WebApplication3.Controllers.GamerController.GameLenga  </font><font color="white">мин </font></li>
-                    @Html.Hidden("seconds", WebApplication3.Controllers.GamerController.Seconds)
+                    <li style="width:150px"> <br /><font color="white">Ваши очки:</font> <font id="PlayerScore" color="white" width="50px"> @WebApplication1.Controllers.GamerController.game.Player.Score        </font></li>
+                    @* <li style="width:150px"><br /><font color="white">Очки противника: </font><font id="EnemyScore" color="white"> @WebApplication1.Controllers.GamerController.game.RNG.Score         </font> </li> *@
+                    <li style="width:150px"><br /><font color="white">Оставшееся время: </font><font id="time" color="white">  @WebApplication1.Controllers.GamerController.GameLenga  </font><font color="white">мин </font></li>
+                    @Html.Hidden("seconds", WebApplication1.Controllers.GamerController.Seconds)
                 </ul>
             </div>
         </div>

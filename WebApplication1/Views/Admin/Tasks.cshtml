@@ -13,7 +13,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (WebApplication3.Models.Tasks line in WebApplication3.Controllers.AdminController.db.Tasks)
+        @foreach (WebApplication1.Models.Tasks line in WebApplication1.Controllers.AdminController.db.Tasks)
         {
             <tr>
                 <td align="center">@line.ID</td>
@@ -24,6 +24,8 @@
                     {
                         @Html.Hidden("TaskID", line.ID)
                         <input class="btn btn-default" type="submit" value="Просмотреть больше" />
+                        <button formaction="/Admin/TaskEdit">Редактировать</button>
+                        <button formaction="/Admin/TaskDelete/@line.ID">Удалить</button>
                     }
                 </td>
             </tr>

@@ -1,20 +1,22 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using WebApplication1.Configurations;
 
-namespace WebApplication3.Models
+namespace WebApplication1.Models
 {
     public class Tasks
     {
         public int ID { get; set; }
         public string Text { get; set; }
         public string Answer { get; set; }
-        public ICollection<GameTask> GameTask { get; set; }
+        public ICollection<Game> Game { get; set; }
         public ICollection<Sent_Answers> UsersAnswers { get; set; }
         public Tasks()
         {
-            GameTask= new List<GameTask>();
+            Game= new List<Game>();
             UsersAnswers = new List<Sent_Answers>();
         }
     }

@@ -1,4 +1,4 @@
-﻿using WebApplication3.Models;
+﻿using WebApplication1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +8,10 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication;
-using WebApplication3.DataBase;
+using WebApplication1.DataBase;
 using Microsoft.IdentityModel.Tokens;
 
-namespace WebApplication3.Controllers
+namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
@@ -35,21 +35,20 @@ namespace WebApplication3.Controllers
         {
             if (!password.IsNullOrEmpty() & !Login.IsNullOrEmpty())
             {
-                
                 var us = db.Users.FirstOrDefault(u => u.Login == Login & u.Password == password);
                 if (us is not null)
                 {
                     var claims = new List<Claim>
                     {
                         new Claim(ClaimsIdentity.DefaultNameClaimType,us.Login),
-                        new Claim(ClaimsIdentity.DefaultRoleClaimType,us.Role)
+                        new Claim(ClaimsIdentity.DefaultRoleClaimType,us.Role.Name)
                     };
                     var claimsIdentity = new ClaimsIdentity(claims, "Cookies");
                     var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
                     HttpContext.SignOutAsync();
                     HttpContext.SignInAsync(claimsPrincipal);
                     ViewBag.Message = "";
-                    switch(us.Role)
+                    switch(us.Role.Name)
                     {
                         case "Администратор":
                                 role = Role.Administrator;
@@ -58,7 +57,7 @@ namespace WebApplication3.Controllers
                             role = Role.Player;
                                 break;
                     }
-                    user.Role=role.ToString();
+                    user.RoleID= us.Role.ID;
                     return View("Main");
                 }
                 else
@@ -74,11 +73,38 @@ namespace WebApplication3.Controllers
                 return View("Login", new Users() { Login = Login, Password = password });
             }
         }
-
+        public ActionResult Register()
+        {
+            return View("Register");
+        }
+        public ActionResult RegisterClick(string Login,string Password,string Name,string SurName,string FatName,string Role)
+        {
+            if (db.Users.Where(u => u.Login == Login).Any())
+            {
+                ViewBag.Message = "Пользователь с таким именем уже существует";
+                return View("Register");
+            }
+            if (Login.Trim().IsNullOrEmpty() ||Password.Trim().IsNullOrEmpty() || Name.Trim().IsNullOrEmpty() || SurName.Trim().IsNullOrEmpty() || FatName.Trim().IsNullOrEmpty() || Role.Trim().IsNullOrEmpty())
+            {
+                ViewBag.Message = "Какие то поля не заполнены";
+                return View("Register");
+            }
+            if (Password.Length<5)
+            {
+                ViewBag.Message = "Сделайте пароль более чем 5 симболов";
+                return View("Register");
+            }
+            int roleid = db.Roles.FirstOrDefault(el => el.Name == Role).ID;
+            
+            Users user=Users.Create(Login,Password, Name, SurName, FatName, roleid);
+            db.Users.Add(user);
+            db.SaveChanges();
+            return View("Login");
+        }
         public ActionResult LogOut()
         {
             HttpContext.SignOutAsync();
-            user = new Users();
+
             return View("Main");
         }
 

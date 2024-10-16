@@ -1,4 +1,4 @@
-﻿namespace WebApplication3.Models
+﻿namespace WebApplication1.Models
 {
     public class Teams
     {
@@ -7,5 +7,7 @@
         public string Name { get; set; } = "";
         public int Score { get; set; } = 0;
         public Game Game { get; set; }
+        public ICollection<Users> Users { get; set; }
+        public ICollection<Shots> Shots { get; set; }
     }
 }

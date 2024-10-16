@@ -1,9 +1,16 @@
-using WebApplication3.DataBase;
+using WebApplication1.DataBase;
 using Microsoft.EntityFrameworkCore;
+using WebApplication1.Controllers;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
+using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//builder.Services;
+//builder.Services.AddTransient()
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<GameContext>(
     options =>
@@ -11,14 +18,19 @@ builder.Services.AddDbContext<GameContext>(
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
     }
     );
-builder.Services.AddAuthentication("Cookies")
-    .AddCookie(options => options.LoginPath = "/Login");
-builder.Services.AddAuthorization();
 
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie(options => 
+    {
+        options.LoginPath = "/Home/Login";
+        options.AccessDeniedPath = "/Home/Main";
+    });
+builder.Services.AddAuthorization();
 var app = builder.Build();
 
+HomeController.user = new WebApplication1.Models.Users() { Role = new WebApplication1.Models.Role { Name = "Никто" } };
+
 app.UseAuthentication();  
-app.UseAuthorization();   
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -31,7 +43,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(

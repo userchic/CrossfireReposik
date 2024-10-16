@@ -10,21 +10,20 @@
             <th align="left" style="width: 75px;">Дата начала</th>
             <th align="right" style="width: 50px;">Время начала</th>
             <th align="right" style="width: 50px;">Длительность(мин)</th>
-            @if (WebApplication3.Controllers.HomeController.user.role == "Игрок")
+            @if (WebApplication1.Controllers.HomeController.user.Role.Name == "Игрок")
             {
                 <th align="right" style="width: 30px;"></th>
             }
         </tr>
     </thead>
     <tbody>
-        @foreach (WebApplication3.Models.Game line in WebApplication3.Controllers.HomeController.db.Games)
+        @foreach (WebApplication1.Models.Game line in WebApplication1.Controllers.HomeController.db.Games)
         {
         <tr>
             <td align="left">@line.GameName</td>
-            <td align="center">@line.StartData.Day.@line.StartData.Month.@line.StartData.Year</td>
-            <td align="left">@line.StartTime.Hour:@line.StartTime.Minute</td>
+            <td align="center">@line.StartData</td>
             <td align="left">@line.Lenga</td>
-            @if (WebApplication3.Controllers.HomeController.user.Role == "Игрок")
+                @if (WebApplication1.Controllers.HomeController.user.Role.Name == "Игрок")
             {
                 using (Html.BeginForm("Play", "Gamer"))
                 {

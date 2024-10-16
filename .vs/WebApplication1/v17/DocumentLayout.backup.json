@@ -3,60 +3,152 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\database\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\usergamestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\usergamestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\userparticipation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\userparticipation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\userteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\userteam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\home\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\database\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\gamecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\controllers\\gamercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\gamercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\home\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\gameedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\gameedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\userparticipation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\userparticipation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\usergamestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\usergamestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\configurations\\shotsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\configurations\\shotsconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\shots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\shots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\database\\gamedbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\gamedbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\task.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\task.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\sent_answers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\sent_answers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\configurations\\tasksconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\configurations\\tasksconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\shared\\_layout_game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout_game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\results.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\results.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\answer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\answer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\gamemake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\gamemake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\tasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\tasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\taskmake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\taskmake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\ingameuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,62 +159,6 @@
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\ingametask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\gametask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\gametask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\gamemake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\gamemake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\task.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\task.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\taskmake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\taskmake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\tasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\tasks.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\answer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\answer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\results.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\results.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\obj\\Debug\\net8.0\\WebApplication1.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApplication1\\obj\\Debug\\net8.0\\WebApplication1.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -131,28 +167,8 @@
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\shared\\_layout_game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout_game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\database\\gamedbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\gamedbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -162,186 +178,121 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Teams.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Teams.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Teams.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Teams.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Teams.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:38:35.141Z",
+              "WhenOpened": "2024-10-13T18:21:50.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAIAwwE8AAAAYAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAmwGQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T15:04:15.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Game.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Game.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Game.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T16:41:33.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\DataBase\\GameContext.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataBase\\GameContext.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\DataBase\\GameContext.cs",
-              "RelativeToolTip": "WebApplication1\\DataBase\\GameContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T15:05:51.693Z",
+              "WhenOpened": "2024-10-13T15:09:07.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserGameStatus.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserGameStatus.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\UserGameStatus.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserGameStatus.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\UserGameStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:37:20.056Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\appsettings.json",
+              "RelativeToolTip": "WebApplication1\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-13T18:33:54.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UserParticipation.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserParticipation.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\UserParticipation.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserParticipation.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\UserParticipation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:32:58.269Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB4AAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:32:28.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UserTeam.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserTeam.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\UserTeam.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserTeam.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\UserTeam.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:45:23.798Z",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Register.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Register.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-15T09:49:52.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Users.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\Users.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Users.cs",
               "RelativeToolTip": "WebApplication1\\Models\\Users.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T08:29:50.349Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Main.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Main.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Main.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Main.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Home\\Main.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:29:01.989Z",
+              "DocumentIndex": 4,
+              "Title": "GameContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\DataBase\\GameContext.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataBase\\GameContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\DataBase\\GameContext.cs",
+              "RelativeToolTip": "WebApplication1\\DataBase\\GameContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T15:05:51.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "GamerController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\GamerController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\GamerController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\GamerController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\GamerController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAwwCoAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAjwEAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T18:46:34.035Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Tasks.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Tasks.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Tasks.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Tasks.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Tasks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:25:55.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Shots.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Shots.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Shots.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Shots.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Shots.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:51:16.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Sent_Answers.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Sent_Answers.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Sent_Answers.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Sent_Answers.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Sent_Answers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:29:51.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "Role.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Role.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\Role.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Role.cs",
               "RelativeToolTip": "WebApplication1\\Models\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-15T08:41:40.757Z",
               "EditorCaption": ""
@@ -349,158 +300,236 @@
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "InGameUser.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameUser.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\InGameUser.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameUser.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\InGameUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UserGameStatus.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserGameStatus.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\UserGameStatus.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserGameStatus.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\UserGameStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:29:48.645Z",
+              "WhenOpened": "2024-10-15T08:37:20.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "InGameTask.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameTask.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\InGameTask.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameTask.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\InGameTask.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:29:47.902Z",
+              "DocumentIndex": 9,
+              "Title": "Main.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Main.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Main.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Main.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Main.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:29:01.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GameTask.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\GameTask.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\GameTask.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\GameTask.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\GameTask.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:57:57.358Z",
+              "DocumentIndex": 10,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-10-14T14:12:54.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GameEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\GameEdit.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\GameEdit.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\GameEdit.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Admin\\GameEdit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-15T11:40:15.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "GameProcess.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\GameProcess.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\GameProcess.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\GameProcess.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\GameProcess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Teams.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Teams.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Teams.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Teams.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Teams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T08:29:46.744Z",
+              "WhenOpened": "2024-10-15T08:38:35.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Shots.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Shots.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Shots.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Shots.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Shots.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:51:16.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Class.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Class.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Class.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Class.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T07:02:36.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:32:28.748Z",
+              "DocumentIndex": 13,
+              "Title": "UserParticipation.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserParticipation.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\UserParticipation.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserParticipation.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\UserParticipation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:32:58.269Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ShotsConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Configurations\\ShotsConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Configurations\\ShotsConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Configurations\\ShotsConfig.cs",
+              "RelativeToolTip": "WebApplication1\\Configurations\\ShotsConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T17:02:42.044Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwCYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T15:09:07.342Z",
-              "EditorCaption": ""
+              "Title": "favicon.ico - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, BMP]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\favicon.ico",
+              "RelativeDocumentMoniker": "WebApplication1\\favicon.ico",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\favicon.ico - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, BMP]",
+              "RelativeToolTip": "WebApplication1\\favicon.ico - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2024-10-15T16:39:01.688Z",
+              "EditorCaption": " - Icon [16x16, 32-\u0440\u0430\u0437\u0440\u044F\u0434\u043D\u043E\u0435, BMP]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "GameMake.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\GameMake.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\GameMake.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\GameMake.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Admin\\GameMake.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAgwB8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T11:57:07.86Z",
-              "EditorCaption": ""
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Game.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Game.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T16:41:33.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
+              "Title": "GameDbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\DataBase\\GameDbInitializer.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DataBase\\GameDbInitializer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\DataBase\\GameDbInitializer.cs",
+              "RelativeToolTip": "WebApplication1\\DataBase\\GameDbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T18:37:45.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Task.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\Task.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\Task.cshtml",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\Task.cshtml",
               "RelativeToolTip": "WebApplication1\\Views\\Admin\\Task.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:07:31.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T12:07:31.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TaskMake.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\TaskMake.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\TaskMake.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\TaskMake.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Admin\\TaskMake.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:07:30.484Z",
-              "EditorCaption": ""
+              "DocumentIndex": 21,
+              "Title": "Tasks.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Tasks.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Tasks.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Tasks.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Tasks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T18:25:55.81Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Tasks.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\Tasks.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\Tasks.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\Tasks.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Admin\\Tasks.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:07:25.828Z",
-              "EditorCaption": ""
+              "Title": "Sent_Answers.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Sent_Answers.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Sent_Answers.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Sent_Answers.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Sent_Answers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:29:51.774Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "Answer.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Answer.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Answer.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Answer.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Answer.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:08:32.701Z",
-              "EditorCaption": ""
+              "Title": "TasksConfig.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Configurations\\TasksConfig.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Configurations\\TasksConfig.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Configurations\\TasksConfig.cs",
+              "RelativeToolTip": "WebApplication1\\Configurations\\TasksConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T13:55:34.223Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Game.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Game.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Game.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Game.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Game.cshtml",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:08:30.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T11:56:59.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GameProcess.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\GameProcess.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\GameProcess.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\GameProcess.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\GameProcess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:29:46.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GameMake.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\GameMake.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\GameMake.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\GameMake.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Admin\\GameMake.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAWwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T11:57:07.86Z"
             },
             {
               "$type": "Document",
@@ -510,53 +539,133 @@
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Results.cshtml",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Results.cshtml",
               "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Results.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAACBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:09:08.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T12:09:08.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_Layout_Game.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAWwDUAAAC4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:32:35.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAIA8wDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T15:04:15.146Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
+              "Title": "Answer.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Answer.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Answer.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Answer.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Answer.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAawB4AAACHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:08:32.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Tasks.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\Tasks.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\Tasks.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\Tasks.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Admin\\Tasks.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:07:25.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Login.cshtml",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Login.cshtml",
               "RelativeToolTip": "WebApplication1\\Views\\Home\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T10:58:15.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T10:58:15.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 34,
+              "Title": "Game.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Game.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Game.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Game.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Game.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T11:56:59.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T12:08:30.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewImports.cshtml",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "WebApplication1\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:29:16.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T12:29:16.526Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
+              "Title": "TaskMake.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\TaskMake.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\TaskMake.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\TaskMake.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Admin\\TaskMake.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-14T12:07:30.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "InGameUser.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameUser.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\InGameUser.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameUser.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\InGameUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:29:48.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "InGameTask.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameTask.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\InGameTask.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameTask.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\InGameTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T08:29:47.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "WebApplication1.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\obj\\Debug\\net8.0\\WebApplication1.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "WebApplication1\\obj\\Debug\\net8.0\\WebApplication1.AssemblyInfo.cs",
@@ -568,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 40,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "WebApplication1\\Properties\\launchSettings.json",
@@ -580,31 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "WebApplication1\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-14T14:12:54.155Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "_Layout_Game.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-14T12:32:35.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewStart.cshtml",
@@ -613,52 +698,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-14T12:29:18.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:21:50.804Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\appsettings.json",
-              "RelativeToolTip": "WebApplication1\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-13T18:33:54.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "GameDbInitializer.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\DataBase\\GameDbInitializer.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DataBase\\GameDbInitializer.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\DataBase\\GameDbInitializer.cs",
-              "RelativeToolTip": "WebApplication1\\DataBase\\GameDbInitializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:37:45.925Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }
