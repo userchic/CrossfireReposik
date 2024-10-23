@@ -10,18 +10,17 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication;
 using WebApplication1.DataBase;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Mvc.Razor;
 
 namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        public static Users user = new Users();
-        public static GameContext db;
+        public GameContext db;
         public enum Role
         {
             Administrator,Player,None
         }
-        public static Role role=Role.None;
         public ActionResult Main()
         {
             return View("Main");
@@ -38,6 +37,7 @@ namespace WebApplication1.Controllers
                 var us = db.Users.FirstOrDefault(u => u.Login == Login & u.Password == password);
                 if (us is not null)
                 {
+                    us.Role = db.Roles.FirstOrDefault(x => x.ID == us.RoleID);
                     var claims = new List<Claim>
                     {
                         new Claim(ClaimsIdentity.DefaultNameClaimType,us.Login),
@@ -47,24 +47,12 @@ namespace WebApplication1.Controllers
                     var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
                     HttpContext.SignOutAsync();
                     HttpContext.SignInAsync(claimsPrincipal);
-                    ViewBag.Message = "";
-                    switch(us.Role.Name)
-                    {
-                        case "Администратор":
-                                role = Role.Administrator;
-                                break;
-                        case "Игрок":
-                            role = Role.Player;
-                                break;
-                    }
-                    user.RoleID= us.Role.ID;
-                    return View("Main");
+                    return View("Success");
                 }
                 else
                 {
-                    ViewBag.Message = "Введены данные несуществующего пользователя, введите другие данные";
-                    return View("Login");
-                        //View("Login", new Users() { Login = "", Password = "" });
+                    ViewBag.Message = "Неверный пароль или логин";
+                    return View("Login", new Users() { Login = Login, Password = password });
                 }
             }
             else
@@ -77,16 +65,17 @@ namespace WebApplication1.Controllers
         {
             return View("Register");
         }
-        public ActionResult RegisterClick(string Login,string Password,string Name,string SurName,string FatName,string Role)
+        public ActionResult RegisterClick(string Login,string Password,string Name,string SurName,string FatName,string Role,string Class)
         {
+            //валидация
+            if (Login.Trim().IsNullOrEmpty() || Password.Trim().IsNullOrEmpty() || Name.Trim().IsNullOrEmpty() || SurName.Trim().IsNullOrEmpty() || FatName.Trim().IsNullOrEmpty() || Role.Trim().IsNullOrEmpty() || Class.Trim().IsNullOrEmpty())
+            {
+                ViewBag.Message = "Какие то поля не заполнены";
+                return View("Register");
+            }
             if (db.Users.Where(u => u.Login == Login).Any())
             {
                 ViewBag.Message = "Пользователь с таким именем уже существует";
-                return View("Register");
-            }
-            if (Login.Trim().IsNullOrEmpty() ||Password.Trim().IsNullOrEmpty() || Name.Trim().IsNullOrEmpty() || SurName.Trim().IsNullOrEmpty() || FatName.Trim().IsNullOrEmpty() || Role.Trim().IsNullOrEmpty())
-            {
-                ViewBag.Message = "Какие то поля не заполнены";
                 return View("Register");
             }
             if (Password.Length<5)
@@ -94,29 +83,33 @@ namespace WebApplication1.Controllers
                 ViewBag.Message = "Сделайте пароль более чем 5 симболов";
                 return View("Register");
             }
-            int roleid = db.Roles.FirstOrDefault(el => el.Name == Role).ID;
             
-            Users user=Users.Create(Login,Password, Name, SurName, FatName, roleid);
+            Users user=Users.Create(Login,Password, Name, SurName, FatName, Role,Class);
+
             db.Users.Add(user);
             db.SaveChanges();
-            return View("Login");
+            return View("Login",user);
         }
         public ActionResult LogOut()
         {
             HttpContext.SignOutAsync();
-
-            return View("Main");
+                return View("Success");
         }
 
 
         public ActionResult Login()
         {
-            return View("Login");
+            return View("Login",new Users());
         }
 
         public ActionResult Index()
         {
+            
             return View("Main");
         }
+        public static bool UserIsAuthorized(ClaimsPrincipal User) => User.Identity.IsAuthenticated;
+
+        public static bool UserIsAdmin(ClaimsPrincipal User) => User.IsInRole("Администратор");
+        public static bool UserIsPlayer(ClaimsPrincipal User) =>  User.IsInRole("Игрок");
     }
 }

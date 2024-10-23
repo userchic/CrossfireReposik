@@ -77,3 +77,5 @@ C:\Users\User\Desktop\WebApplication1\WebApplication1\bin\Debug\net8.0\packages.
 C:\Users\User\Desktop\WebApplication1\WebApplication1\bin\Debug\net8.0\Web.config
 C:\Users\User\Desktop\WebApplication1\WebApplication1\bin\Debug\net8.0\Web.Debug.config
 C:\Users\User\Desktop\WebApplication1\WebApplication1\bin\Debug\net8.0\Web.Release.config
+C:\Users\User\Desktop\WebApplication1\WebApplication1\bin\Debug\net8.0\Npgsql.dll
+C:\Users\User\Desktop\WebApplication1\WebApplication1\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll

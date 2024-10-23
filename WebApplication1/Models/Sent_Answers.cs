@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,5 +19,10 @@ namespace WebApplication1.Models
         public Users User { get; set; }
         public Shots Shot { get; set; }
         public Teams Team { get; set; }
+
+        public bool Validation()
+        {
+            return !Answer.Trim().IsNullOrEmpty();
+        }
     }
 }

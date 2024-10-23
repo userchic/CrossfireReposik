@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Net;
+using WebApplication1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,10 +16,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<GameContext>(
     options =>
     {
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
     }
     );
-
 builder.Services.AddAuthentication("Cookies")
     .AddCookie(options => 
     {
@@ -26,9 +26,9 @@ builder.Services.AddAuthentication("Cookies")
         options.AccessDeniedPath = "/Home/Main";
     });
 builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
-HomeController.user = new WebApplication1.Models.Users() { Role = new WebApplication1.Models.Role { Name = "Никто" } };
 
 app.UseAuthentication();  
 // Configure the HTTP request pipeline.

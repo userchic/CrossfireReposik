@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,10 @@ namespace WebApplication1.Models
         {
             Game= new List<Game>();
             UsersAnswers = new List<Sent_Answers>();
+        }
+        public bool Validation()
+        {
+            return !Answer.Trim().IsNullOrEmpty()&!Text.Trim().IsNullOrEmpty();
         }
     }
 }

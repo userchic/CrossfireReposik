@@ -10,7 +10,7 @@
             <th align="left" style="width: 75px;">Дата начала</th>
             <th align="right" style="width: 50px;">Время начала</th>
             <th align="right" style="width: 50px;">Длительность(мин)</th>
-            @if (WebApplication1.Controllers.HomeController.user.Role.Name == "Игрок")
+            @if (WebApplication1.Controllers.HomeController.UserIsPlayer(User))
             {
                 <th align="right" style="width: 30px;"></th>
             }
@@ -23,7 +23,7 @@
             <td align="left">@line.GameName</td>
             <td align="center">@line.StartData</td>
             <td align="left">@line.Lenga</td>
-                @if (WebApplication1.Controllers.HomeController.user.Role.Name == "Игрок")
+                @if (WebApplication1.Controllers.HomeController.UserIsPlayer(User))
             {
                 using (Html.BeginForm("Play", "Gamer"))
                 {

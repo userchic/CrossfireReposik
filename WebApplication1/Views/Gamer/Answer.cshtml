@@ -28,7 +28,7 @@
         const minutes = document.getElementById("time").innerText
         const Answer = document.getElementById("SentAnswer").value
         if (Answer !== "") {
-            if (@WebApplication1.Controllers.GamerController.game.Player.SolvedTasks+@WebApplication1.Controllers.GamerController.game.Player.MistakedTasks < @WebApplication1.Controllers.GamerController.game.Tasks.Count-1) {
+            if (@Model.Player.SolvedTasks+@WebApplication1.Controllers.GamerController.gameProcess.Player.MistakedTasks < @WebApplication1.Controllers.GamerController.gameProcess.Tasks.Count-1) {
                 XMLHttpRequest. $.ajax({
                     url: "/Gamer/SendAnswer",
                     success: function (result) {

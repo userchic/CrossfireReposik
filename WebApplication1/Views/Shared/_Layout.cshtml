@@ -19,18 +19,18 @@
                 @Html.ActionLink("Перестрелка", "Main", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <p>
-                        @if ( WebApplication1.Controllers.HomeController.user.Role.Name == "Administrator")
+                <p>
+                    <ul class="nav navbar-nav">
+                        @if ( WebApplication1.Controllers.HomeController.UserIsAdmin(User))
                         {
                             <li><div style=" padding-right: 30px; padding-left: 30px;">@Html.ActionLink("Список задач системы", "Tasks", "Admin")</div></li>
                             <li> <div style=" padding-right: 30px; padding-left: 30px;">@Html.ActionLink("Добавление игр", "AddGame", "Admin")</div> </li>
                         }
                         <li><div style=" padding-right: 30px; padding-left: 30px;">@Html.ActionLink("Игры", "Main", "Home")</div></li>
-                        
-                            @if (WebApplication1.Controllers.HomeController.user.Role.Name != "Никто")
+
+                        @if (WebApplication1.Controllers.HomeController.UserIsPlayer(User) || WebApplication1.Controllers.HomeController.UserIsAdmin(User))
                             {
-                            <li><div style=" padding-right: 30px; padding-left: 30px;"><a href="/Home/Login">@WebApplication1.Controllers.HomeController.user.Name</a></div></li>
+                            <li><div style=" padding-right: 30px; padding-left: 30px;"><a href="/Home/Login">@User.Identity.Name</a></div></li>
                         }
                         else
                         {
@@ -38,7 +38,7 @@
                                 <div style=" padding-right: 30px; padding-left: 30px;"><a href="/Home/Login"> Войти в систему</a></div>
                                 </li>
                         }
-                        @if (WebApplication1.Controllers.HomeController.user.Role == null)
+                        @if ( WebApplication1.Controllers.HomeController.UserIsAuthorized(User))
                         {
                             <li>
                                 @Html.ActionLink("Выход", "LogOut", "Home")
@@ -50,14 +50,14 @@
                                 @Html.ActionLink("Регистрация", "Register", "Home")
                         </li>
                         }
-                        @if (WebApplication1.Controllers.HomeController.user.Role.Name == "Administrator")
+                        @if (WebApplication1.Controllers.HomeController.UserIsAdmin(User))
                         {
                         <li style="padding-left:30px">
                             <font color="black">Вид Администратора </font>
                             </li>
                         }
-                        </p>
                     </ul>
+                </p>
             </div>
         </div>
     </nav>

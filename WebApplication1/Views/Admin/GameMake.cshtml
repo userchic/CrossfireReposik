@@ -20,11 +20,13 @@
             <input type="time" id="StartTime" name="StartTime" autocomplete="on">
         </p>
         <button type="submit">Создать игру</button>
-        <button type="reset" name="action" value="Cancel">Отмена</button>
+        <button type="submit" formaction="/Admin/CancelMakeGame" value="Cancel">Отмена</button>
         <font color="red"><p>@ViewBag.Message</p></font>
         <h1>Выберить задачи</h1>
+        @if (WebApplication1.Controllers.AdminController.db.Tasks.Count()>0)
+        {
         <ul>
-            @foreach (WebApplication1.Models.Tasks task in WebApplication1.Controllers.HomeController.db.Tasks)
+            @foreach (WebApplication1.Models.Tasks task in WebApplication1.Controllers.AdminController.db.Tasks)
             {
                 <li>
                     <div>Текст задачи: @task.Text</div>
@@ -32,11 +34,15 @@
                     <div>Ответ:@task.Answer</div>
                     <br />
                     @Html.Hidden("TaskID", task.ID)
-                    <input type="checkbox" name="tasks" />
+                    <Button type="submit" formaction="/Admin/AddTaskToNewGame" name="tasks" />
                 </li>
             }
 
             </ul>
+        }
+        else
+    {<p>Задач в системе нет</p>}
+
     }
 </div>
 

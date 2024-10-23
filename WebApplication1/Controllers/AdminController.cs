@@ -8,20 +8,24 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
+using WebApplication1.Abstractions;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize(Roles ="Администратор")]
+    [Authorize(Roles = "Администратор")]
     public class AdminController : Controller
     {
-        public static Game CurrentGame = new Game() ;
+        public Game CurrentGame = new Game();
 
-        public static GameContext db;
-        static Random rand1 = new Random();
-        static Random rand2 = new Random();
-        public AdminController(GameContext context)
+         Random rand1 = new Random();
+         Random rand2 = new Random();
+        public ITaskRepository taskRep;
+        public IGameRepository gameRep;
+        public AdminController(ITaskRepository tasks, IGameRepository games)
         {
-            db = context;
+            taskRep = tasks;
+            gameRep = games;
         }
         public ActionResult Index()
         {
@@ -31,26 +35,128 @@ namespace WebApplication1.Controllers
         {
             return View("Game");
         }
+
+        public ActionResult AddTask(Game model)
+        {
+            return View("TaskMake", new Tasks());
+        }
+        public ActionResult CreateTaskClick(string text, string answer)
+        {
+            Tasks task = new Tasks() { Text = text, Answer = answer };
+            if (!task.Validation())
+            {
+                ViewBag.Message = "Некоторые поля неправильно заполнены";
+                return View("TaskMake");
+            }
+            taskRep.CreateTask(task);
+            taskRep.Save();
+            ViewBag.Message2 = "Задача создана";
+            return View("TaskMake");
+        }
+        public ActionResult UpdateTaskClick(int id, string text, string answer)
+        {
+            Tasks task = taskRep.GetTask(id);
+            if (task is null)
+            {
+                ViewBag.Message = "Задача не существует";
+                return View("Tasks");
+            }
+            if (!task.Validation())
+            {
+                ViewBag.Message = "Некоторые поля не заполнены";
+                return View("TaskEdit");
+            }
+            taskRep.UpdateTask(task);
+            taskRep.Save();
+            ViewBag.Message2 = "Задача создана";
+            return View("TaskEdit");
+        }
+        public ActionResult DeleteTaskClick(int taskId)
+        {
+            Tasks task = taskRep.GetTask(taskId);
+            if (task is null)
+            {
+                ViewBag.Message = "Задача не существует";
+                return View("Tasks");
+            }
+            taskRep.DeleteTask(task);
+            taskRep.Save();
+            ViewBag.Message = "Задача удалена";
+            return View("Tasks");
+        }
         public ActionResult AddGame()
         {
-            return View("GameMake", CurrentGame);
+            return View("GameMake");
         }
         public ActionResult CancelMakeGame()
         {
             CurrentGame = new Game();
             return View("GameMake", CurrentGame);
         }
-        public ActionResult AddTask(Game model)
+        [HttpPost]
+        public ActionResult CreateGameClick(string Name, DateTime StartDate,DateTime StartTime, int Lenga)
         {
-            UpdateGame(model);
-            return View("TaskMake", new Tasks());
+            if (CurrentGame.Tasks.Count == 0)
+            {
+                ViewBag.Message = "Задачи не выбраны";
+                return View("GameMake");
+            }
+            CurrentGame.Name = Name;
+            CurrentGame.StartData = StartDate.AddHours(StartTime.Hour).AddMinutes(StartTime.Minute).AddSeconds(StartTime.Second);
+            CurrentGame.Lenga = Lenga;
+            if (!CurrentGame.Validation())
+            {
+                ViewBag.Message = "Некоторые поля неверно заполнены";
+                return View("Admin", "GameMake");
+            }
+            gameRep.CreateGame(CurrentGame);
+            gameRep.Save();
+            CurrentGame = new Game();
+            return View("GameMake");
         }
-        public void UpdateGame(Game game)
+        [HttpPut]
+        public ActionResult UpdateGameClick(int gameId, string GameName,int Lenga,DateTime StartDate,DateTime StartTime)
         {
-            CurrentGame.GameName = game.GameName;
-            CurrentGame.ID = game.ID;
-            CurrentGame.Lenga = game.Lenga;
-            CurrentGame.StartData = game.StartData;
+            Game game = gameRep.GetGame(gameId);
+            if (game is null)
+            {
+                ViewBag.Message = "Игра не существует";
+                return View("Games");
+            }
+            if (game.Started())
+            {
+                ViewBag.Message = "Игра уже началась";
+                return View("Games");
+            }
+            game.Name = GameName;
+            game.StartData = StartDate.AddHours(StartTime.Hour).AddMinutes(StartTime.Minute).AddSeconds(StartTime.Second);
+            game.Lenga = Lenga;
+            if (!game.Validation())
+            {
+                ViewBag.Message = "Некоторые поля неверно заполнены";
+                return View( "UpdateGame",game);
+            }
+            gameRep.UpdateGame(game);
+            gameRep.Save();
+            return View("Games");
+        }
+        [HttpDelete]
+        public ActionResult DeleteGameClick(int gameId)
+        {
+            Game game = gameRep.GetGame(gameId);
+            if (game is null)
+            {
+                ViewBag.Message = "Игра не существует";
+                return View("Games");
+            }
+            if (game.Ongoing())
+            {
+                ViewBag.Message = "Игра идёт";
+                return View("Games");
+            }
+            gameRep.DeleteGame(game);
+            gameRep.Save();
+            return View("Games");
         }
         public ActionResult Cancelmaketask()
         {
@@ -61,96 +167,10 @@ namespace WebApplication1.Controllers
             return View("Tasks");
         }
         [HttpGet]
-        public ActionResult TaskInfo(string TaskID)
+        public ActionResult TaskInfo(int taskID)
         {
-            int ID = int.Parse(TaskID);
-            Tasks t = db.Tasks.FirstOrDefault(Task => Task.ID == ID);
+            Tasks t = taskRep.GetTask(taskID);
             return View("Task", t);
-        }
-        [HttpPost]
-        public ActionResult AddTaskClick(string Text, string Answer)
-        {
-            if (Text == null || Answer == null || Text.Length == 0 || Answer.Length == 0)
-            {
-                ViewBag.Message = "Текст или ответ задачи не введены";
-                return View("TaskMake", new Tasks() { Answer = Answer, Text = Text });
-            }
-            else
-            {
-                db.Tasks.Add(new Tasks() { Answer = Answer, Text = Text });
-                ViewBag.Message2 = "Задача создана!";
-                return View("TaskMake", new Tasks());
-            }
-        }
-        [HttpPost]
-        public ActionResult AddGameClick(string GameName, string StartData, string Lenga, string StartTime,List<int> id, List<bool> tasks)
-        {
-            DateTime t;
-            int num;
-            if (!GameName.Trim().IsNullOrEmpty() &&
-                StartData.Trim().IsNullOrEmpty() && DateTime.TryParse(StartData, out t) &&
-                Lenga.Trim().IsNullOrEmpty() && int.TryParse(Lenga, out num) && num > 0 &&
-                StartTime.Trim().IsNullOrEmpty() && DateTime.TryParse(StartTime, out t)
-                && tasks.Count > 0 && DateTime.Parse(StartData + " " + StartTime) > DateTime.Now)
-            {
-                Game game = new Game()
-                {
-                    GameName = GameName,
-                    Lenga = int.Parse(Lenga),
-                    StartData = DateTime.Parse(StartData + StartTime)
-                };
-                for (int i=0;i<tasks.Count;i++)
-                {
-                    if (tasks[i])
-                    {
-                        //game.GameTasks db.Tasks.FirstOrDefault(elem => elem.ID == id[i]);
-                    }
-                }
-                db.SaveChanges();
-                ViewBag.Message = "Игра создана";
-                return View("GameMake", new Game());
-            }
-            else
-            {
-                Game g = CurrentGame;
-                    ViewBag.Message = "Некоторые поля были неправильно заполнены:";
-                    if (GameName == "")
-                        ViewBag.Message += "Не указано название игры ";
-                    if (StartData == "" || StartTime == "")
-                    {
-                        if (StartData != "")
-                        {
-                            if (!DateTime.TryParse(StartData, out t))
-                                ViewBag.Message += " Неправильно введена дата проведения";
-                        }
-                        else
-                            ViewBag.Message += "Не указана дата начала игры ";
-                        if (StartTime != "")
-                        {
-                            if (!DateTime.TryParse(StartTime, out t))
-                                ViewBag.Message += "Неправильно введено время начала игры";
-                        }
-                        else
-                            ViewBag.Message += "Не указано время начала игры";
-                    }
-                    else
-                    {
-                        if (DateTime.Parse(StartData + " " + StartTime) > DateTime.Now)
-                            ViewBag.Message += "Указано прошедшее время/дата начала игры";
-                    }
-                    if (Lenga != "")
-                    {
-                        if (!int.TryParse(Lenga, out num) || int.Parse(Lenga) <= 0)
-                            ViewBag.Message += "Неправильно введена длительность игры ";
-                    }
-                    else
-                        ViewBag.Message += "Не указана длительность игры";
-
-                    ViewBag.Message += " \n Введите информацию в эти поля ещё раз";
-                if (tasks.Count == 0)
-                    ViewBag.Message += " \n Не создано ни одной задачи! Создайте хотя бы одну задачу для создаваемой игры";
-                return View("GameMake", g);
-            }
         }
     }
 }

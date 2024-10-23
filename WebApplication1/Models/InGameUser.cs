@@ -7,12 +7,12 @@ namespace WebApplication1.Models
 {
     public class InGameUser
     {
-        public int Score { get; set; }
-        public int SolvedTasks { get; set; }
-        public int MistakedTasks { get; set; }
-        public int Shots { get; set; }
-        public int Hits { get; set; }
-        public int Misses { get; set; }
+        public int Score { get; set; } = 0;
+        public int SolvedTasks { get; set; } = 0;
+        public int MistakedTasks { get; set; } = 0;
+        public int Shots { get; set; } = 0;
+        public int Hits { get; set; } = 0;
+        public int Misses { get; set; } = 0;
         public void GetHit() { Score--; }
         public bool SolveTask(ref Random rand)
         {

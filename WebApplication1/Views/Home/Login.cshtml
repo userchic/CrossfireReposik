@@ -1,12 +1,15 @@
-﻿@{
+﻿@model WebApplication1.Models.Users
+@{
     ViewBag.Title = "Login";
 }
 <h1>Вход</h1>
 <div class="container">
     @using (Html.BeginForm("LoginClick", "Home",FormMethod.Post))
     {
-        <input id="Login" name="Login" placeholder="Логин" type="text" ><br />
-        <input id="Password" name="Password" placeholder="Пароль" type="text">
+        <input id="Login" name="Login" placeholder="Логин" type="text" value="@Model.Login">
+
+        <br />
+        <input id="Password" name="Password" placeholder="Пароль" type="password" value="@Model.Password">
         <font color="red"><p>@ViewBag.Message</p></font>
         <input type="submit" style="text-align:center;" value="Вход">
     }
