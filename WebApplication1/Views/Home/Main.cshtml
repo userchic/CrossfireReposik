@@ -1,4 +1,4 @@
-﻿
+﻿@model List<Game>
 @{
     ViewBag.Title = "Main";
 }
@@ -7,7 +7,7 @@
     <thead>
         <tr>
             <th align="center" >Название игры</th>
-            <th align="left" style="width: 75px;">Дата начала</th>
+            <th align="left" style="width: 90px;">Дата начала</th>
             <th align="right" style="width: 50px;">Время начала</th>
             <th align="right" style="width: 50px;">Длительность(мин)</th>
             @if (WebApplication1.Controllers.HomeController.UserIsPlayer(User))
@@ -17,24 +17,53 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (WebApplication1.Models.Game line in WebApplication1.Controllers.HomeController.db.Games)
+        @foreach (WebApplication1.Models.Game line in Model)
         {
         <tr>
-            <td align="left">@line.GameName</td>
-            <td align="center">@line.StartData</td>
+            <td align="left">@line.Name</td>
+                <td align="center">@line.StartData.Year . @line.StartData.Month . @line.StartData.Day</td>
+                <td align="center">@line.StartData.TimeOfDay</td>
             <td align="left">@line.Lenga</td>
-                @if (WebApplication1.Controllers.HomeController.UserIsPlayer(User))
+            @if (WebApplication1.Controllers.HomeController.UserIsPlayer(User))
             {
-                using (Html.BeginForm("Play", "Gamer"))
-                {
                     <td align="right">
+                    @using (Html.BeginForm("JoinGame", "Gamer",FormMethod.Post))
+                    {
                         @Html.Hidden("GameID", line.ID)
                         <input class="btn btn-default" type="submit" value="Играть" />
+                    }
+                    @using (Html.BeginForm("TeamsList", "Gamer"))
+                    {
+                        @Html.Hidden("GameID", line.ID)
+                        <input type="submit" value="Команды" />
+                    }
                     </td>
-                }
             }
-        </tr>
+            @if (WebApplication1.Controllers.HomeController.UserIsAdmin(User))
+            {
+                <td>
+                        @using (Html.BeginForm("UpdateGame", "Admin",FormMethod.Get))
+                        {
+                            @Html.Hidden("GameID", line.ID)
+                            <input class="btn btn-default" type="submit" value="Редактировать" />
+                        }
+                            <Button danger   onclick="Delete(@line.ID)" >Удалить</Button>
+                </td>
+            }
+            </tr>
         }
     </tbody>
 </table>
 
+<script>
+    async function Delete (ID)
+    {
+        const response = await fetch(`/Admin/DeleteGameClick/`+ID, {
+            method: "Delete",
+        }
+        )
+        const resData = await response.json();
+        if (resData.status === 200)
+            location.reload();
+    }
+</script>

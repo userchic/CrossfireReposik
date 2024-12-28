@@ -1,4 +1,4 @@
-﻿@model WebApplication1.Models.InGameTask
+﻿@model WebApplication1.GamerViewModels.AnswerModel
 @{
     Layout = "~/Views/Shared/_Layout_Game.cshtml";
 }
@@ -22,13 +22,12 @@
         })
     }
 </script>
-<script>
+<script> 
     function SendAnswer() {
         const seconds = document.getElementById("seconds").value
         const minutes = document.getElementById("time").innerText
         const Answer = document.getElementById("SentAnswer").value
         if (Answer !== "") {
-            if (@Model.Player.SolvedTasks+@WebApplication1.Controllers.GamerController.gameProcess.Player.MistakedTasks < @WebApplication1.Controllers.GamerController.gameProcess.Tasks.Count-1) {
                 XMLHttpRequest. $.ajax({
                     url: "/Gamer/SendAnswer",
                     success: function (result) {
@@ -40,7 +39,6 @@
                     data: { time: minutes, seconds: seconds, SentAnswer: Answer },
                 })
                 location.href = "/Gamer/Game"
-            }
             else {
                     $.ajax({
                         url: "/Gamer/SendAnswer",
@@ -62,8 +60,8 @@
     }
 </script>
 <h2>Answer</h2>
-    Текст задачи:<p> @WebApplication1.Controllers.GamerController.Task.Text</p>
-    Ответ:<p>  @Html.TextBoxFor(model => model.SentAnswer)</p>
+    Текст задачи:<p> @Model.task.Text</p>
+    Ответ:<p> <input type="text"/></p>
     <font color="red" id="Message"><p>@ViewBag.Message</p></font>
     <br />
     <input class="btn btn-default" type="submit" onclick="SendAnswer()" value="Отправить ответ" />

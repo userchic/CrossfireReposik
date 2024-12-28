@@ -11,25 +11,31 @@ using Microsoft.AspNetCore.Authentication;
 using WebApplication1.DataBase;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Mvc.Razor;
+using WebApplication1.Reposiotories;
+using WebApplication1.Abstractions;
 
 namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
         public GameContext db;
-        public enum Role
-        {
-            Administrator,Player,None
-        }
+
+		public IGameRepository gameRep;
         public ActionResult Main()
         {
-            return View("Main");
+            List<Game> games = (List<Game>)gameRep.GetGames();
+            return View("Main",games);
         }
-        public HomeController(GameContext context)
+        RoleRepository roleRep;
+        ClassRepository classRep;
+        public HomeController(GameContext context,RoleRepository roles,ClassRepository classes,IGameRepository games)
         {
             db = context;
+            roleRep = roles;
+            classRep = classes;
+            gameRep = games;
         }
-        
+        [HttpPost]
         public ActionResult LoginClick(string Login,string password)
         {
             if (!password.IsNullOrEmpty() & !Login.IsNullOrEmpty())
@@ -52,19 +58,20 @@ namespace WebApplication1.Controllers
                 else
                 {
                     ViewBag.Message = "Неверный пароль или логин";
-                    return View("Login", new Users() { Login = Login, Password = password });
+                    return View("Login");
                 }
             }
             else
             {
                 ViewBag.Message = "Не все поля были заполнены, введите логин И пароль";
-                return View("Login", new Users() { Login = Login, Password = password });
+                return View("Login");
             }
         }
         public ActionResult Register()
         {
             return View("Register");
         }
+        [HttpPost]
         public ActionResult RegisterClick(string Login,string Password,string Name,string SurName,string FatName,string Role,string Class)
         {
             //валидация
@@ -84,7 +91,7 @@ namespace WebApplication1.Controllers
                 return View("Register");
             }
             
-            Users user=Users.Create(Login,Password, Name, SurName, FatName, Role,Class);
+            Users user=Users.Create(Login,Password, Name, SurName, FatName, roleRep.GetRole(Role).ID,classRep.GetClass(Class).ID);
 
             db.Users.Add(user);
             db.SaveChanges();
@@ -99,16 +106,14 @@ namespace WebApplication1.Controllers
 
         public ActionResult Login()
         {
-            return View("Login",new Users());
+            return View("Login");
         }
 
         public ActionResult Index()
         {
-            
-            return View("Main");
+            List<Game> games = db.Games.Select(x => x).ToList();
+            return View("Main",games);
         }
-        public static bool UserIsAuthorized(ClaimsPrincipal User) => User.Identity.IsAuthenticated;
-
         public static bool UserIsAdmin(ClaimsPrincipal User) => User.IsInRole("Администратор");
         public static bool UserIsPlayer(ClaimsPrincipal User) =>  User.IsInRole("Игрок");
     }

@@ -24,5 +24,13 @@ namespace WebApplication1.Models
         {
             return !Answer.Trim().IsNullOrEmpty()&!Text.Trim().IsNullOrEmpty();
         }
+
+        public InGameTask ToInGameTask()
+        {
+            InGameTask task = new InGameTask();
+            task.ID = ID;
+            task.Text = Text;
+            return task;
+        }
     }
 }

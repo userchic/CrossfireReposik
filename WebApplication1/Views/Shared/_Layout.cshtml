@@ -23,7 +23,8 @@
                     <ul class="nav navbar-nav">
                         @if ( WebApplication1.Controllers.HomeController.UserIsAdmin(User))
                         {
-                            <li><div style=" padding-right: 30px; padding-left: 30px;">@Html.ActionLink("Список задач системы", "Tasks", "Admin")</div></li>
+                            <li><div style=" padding-right: 30px; padding-left: 30px;">@Html.ActionLink("Добавление задач", "AddTask", "Admin")</div></li>
+                            <li><div style=" padding-right: 30px; padding-left: 30px;">@Html.ActionLink("Список задач системы", "TaskList", "Admin")</div></li>
                             <li> <div style=" padding-right: 30px; padding-left: 30px;">@Html.ActionLink("Добавление игр", "AddGame", "Admin")</div> </li>
                         }
                         <li><div style=" padding-right: 30px; padding-left: 30px;">@Html.ActionLink("Игры", "Main", "Home")</div></li>
@@ -36,9 +37,9 @@
                         {
                             <li>
                                 <div style=" padding-right: 30px; padding-left: 30px;"><a href="/Home/Login"> Войти в систему</a></div>
-                                </li>
+                            </li>
                         }
-                        @if ( WebApplication1.Controllers.HomeController.UserIsAuthorized(User))
+                        @if (User.Identity.IsAuthenticated)
                         {
                             <li>
                                 @Html.ActionLink("Выход", "LogOut", "Home")

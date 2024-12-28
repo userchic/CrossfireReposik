@@ -1,4 +1,5 @@
-﻿using WebApplication1.Abstractions;
+﻿using Microsoft.EntityFrameworkCore;
+using WebApplication1.Abstractions;
 using WebApplication1.DataBase;
 using WebApplication1.Models;
 
@@ -13,7 +14,7 @@ namespace WebApplication1.Reposiotories
         }
         public Game GetGame(int id)
         {
-            return _context.Games.FirstOrDefault(x=>x.ID==id);
+            return _context.Games.Where(x => x.ID == id).Include(x=>x.Tasks).ThenInclude(x=>x.UsersAnswers).ThenInclude(x=>x.Shot).First();
         }
         public ICollection<Game> GetGames()
         {
@@ -35,5 +36,7 @@ namespace WebApplication1.Reposiotories
         {
             _context.SaveChanges();
         }
+
+
     }
 }

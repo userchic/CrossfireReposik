@@ -1,4 +1,5 @@
-﻿@{
+﻿@model WebApplication1.GamerViewModels.GameModel
+@{
     Layout = "~/Views/Shared/_Layout_Game.cshtml";
 }
 @{
@@ -23,12 +24,12 @@
     </thead>
     <tbody>
 
-        @foreach (WebApplication1.Models.InGameTask line in WebApplication1.Controllers.GamerController.game.Tasks)
+        @foreach (WebApplication1.Models.InGameTask line in Model.tasks)
         {
             <tr>
                 <td align="left">@line.Text</td>
                 <td align="center">
-                    @if (line.Result == "Не решено")
+                    @if (!line.Result)
                     {
                         <button class="btn btn-default" type="button" onclick="ClickTask('@line.ID')">Отправить ответ</button >
                     }
@@ -46,3 +47,5 @@
 </table>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
+<script src="~/js/site2.js" ></script>

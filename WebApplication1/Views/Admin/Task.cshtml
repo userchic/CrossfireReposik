@@ -9,4 +9,22 @@
 <div>Ответ:@Model.Answer</div>
 <br />
 <div>ID:@Model.ID</div>
+@using(Html.BeginForm("UpdateTask","Admin",FormMethod.Get))
+{
+    @Html.Hidden("taskId",Model.ID)
+    <button type="submit">Редактировать</button>
+}
+<button danger type="submit" onclick="Delete()" >Удалить</button>
 
+
+<script>
+    async function Delete() {
+        const response = await fetch("/Admin/DeleteTask/@Model.ID", {
+            method: "Delete",
+        }
+        )
+        const resData = await response.json();
+        if (resData.status === 200)
+            location.href = "/Admin/Tasks";
+    }
+</script>

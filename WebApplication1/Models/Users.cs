@@ -28,11 +28,9 @@ namespace WebApplication1.Models
             Teams=new List<Teams>();
         }
 
-        public static Users Create(string login, string password, string name, string surName, string fatName, string Role,string Class)
+        public static Users Create(string login, string password, string name, string surName, string fatName, int roleId,int classId)
         {
-            int classid = HomeController.db.Classes.FirstOrDefault(x => x.Name == Class.ToString()).ID;
-            int roleid = HomeController.db.Roles.FirstOrDefault(x => x.Name == Role.ToString()).ID;
-            return new Users { Login = login, Password = password, Name = name, Surname = surName, Fatname = fatName, RoleID = roleid, ClassID = classid, RegDate = DateTime.UtcNow };
+            return new Users { Login = login, Password = password, Name = name, Surname = surName, Fatname = fatName, RoleID = roleId, ClassID = classId, RegDate = DateTime.UtcNow };
         }
 
     }

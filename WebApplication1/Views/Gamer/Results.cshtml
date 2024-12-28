@@ -1,7 +1,4 @@
-﻿
-@{
-    Layout = "~/Views/Shared/_Layout_Game.cshtml";
-}
+﻿@model WebApplication1.Models.Teams
 @{
     ViewBag.Title = "Results";
 }
@@ -27,8 +24,8 @@
         <tr>
             <td align="left">
                 <div class="container" title="Вы">
-                    <p>Накопленный результат: @WebApplication1.Controllers.GamerController.game.Player.Score
-                    <p>
+                    <p>Накопленный результат: @Model.Score
+                        @*<p>
                         Задач: @WebApplication1.Controllers.GamerController.game.Tasks.Count
                         <div class="container" title="Решено">
                             <p>Решено верно:  @WebApplication1.Controllers.GamerController.game.Player.SolvedTasks
@@ -41,8 +38,8 @@
                         Выстрелов:@WebApplication1.Controllers.GamerController.game.Player.Shots
                         <div class="container" title="Решено">
                             <p>Попаданий: @WebApplication1.Controllers.GamerController.game.Player.Hits
-                            <p>Промахов: @WebApplication1.Controllers.GamerController.game.Player.Misses
-                        </div>
+                            <p>Промахов: @WebApplication1.Controllers.GamerController.game.Player.Misses 
+                        </div>*@
                 </div>
             </td>
             <td align="left">
@@ -59,8 +56,8 @@
                     <p>Выстрелов:@WebApplication1.Controllers.GamerController.game.RNG.Shots</p>
                     <div class="container" title="Решено">
                         <p>Попаданий: @WebApplication1.Controllers.GamerController.game.RNG.Hits</p>
-                        <p>Промахов: @WebApplication1.Controllers.GamerController.game.RNG.Misses</p> *@
-                    </div>
+                        <p>Промахов: @WebApplication1.Controllers.GamerController.game.RNG.Misses</p> 
+                    </div>*@
                 </div>
             </td>
         </tr>

@@ -16,6 +16,10 @@ namespace WebApplication1.Reposiotories
         {
             return _context.Participations.FirstOrDefault(x => x.GameID == gameId&& x.User.Login==login);
         }
+        public UserParticipation GetCurrentParticipation(string login)
+        {
+            return _context.Participations.Select(x=>x).Include(x=>x.UserGameStatus).Where(x => x.UserGameStatus.ID == 1 || x.UserGameStatus.ID == 2).First();
+        }
         public void CreateParticipation(UserParticipation participation)
         {
             _context.Participations.Add(participation);
@@ -28,5 +32,7 @@ namespace WebApplication1.Reposiotories
         {
             _context.SaveChanges();
         }
+
+
     }
 }

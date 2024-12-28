@@ -18,10 +18,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Admin/GameEdit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2FtZUVkaXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Admin/GameMake.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2FtZU1ha2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +34,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVGFza3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Admin/UpdateGame.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlR2FtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Admin/UpdateTask.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXBkYXRlVGFzay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Gamer/Answer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXJcQW5zd2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +52,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Gamer/Results.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXJcUmVzdWx0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Gamer/Shoot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXJcU2hvb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Gamer/Team.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXJcVGVhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Gamer/TeamMake.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXJcVGVhbU1ha2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Gamer/Teams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZXJcVGVhbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/Desktop/WebApplication1/WebApplication1/Views/Home/Index.cshtml]

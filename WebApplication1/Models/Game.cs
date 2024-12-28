@@ -14,6 +14,7 @@ namespace WebApplication1.Models
         public int Lenga { get; set; }
         public int ID { get; set; }
         public int TasksAmount { get; set; } = 0;
+        public int SentAnswers { get; set; } = 0;
         public ICollection<UserParticipation> UserParticipation { get; set; }
         public ICollection<Tasks> Tasks { get; set; }
         public ICollection<Teams> Teams { get; set; }
@@ -25,9 +26,7 @@ namespace WebApplication1.Models
         }
         public bool Validation()
         {
-            int num;
-            DateTime t;
-            return !Name.Trim().IsNullOrEmpty() 
+            return !Name.Trim().IsNullOrEmpty()
                 && Lenga > 0
                 && StartData > DateTime.Now;
         }
@@ -37,7 +36,7 @@ namespace WebApplication1.Models
         }
         public bool Ended()
         {
-            return StartData.AddMinutes(Lenga) >= DateTime.Now ? true : false;
+            return StartData.AddMinutes(Lenga) >= DateTime.Now ? false : true;
         }
         public bool Ongoing()
         {

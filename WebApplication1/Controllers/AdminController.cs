@@ -10,13 +10,13 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Abstractions;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WebApplication1.Controllers
 {
     [Authorize(Roles = "Администратор")]
     public class AdminController : Controller
     {
-        public Game CurrentGame = new Game();
 
          Random rand1 = new Random();
          Random rand2 = new Random();
@@ -31,15 +31,50 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        public ActionResult Game()
+        public ActionResult AddGame()
         {
-            return View("Game");
+            return View("GameMake",taskRep.GetTasks());
         }
-
-        public ActionResult AddTask(Game model)
+        public ActionResult AddTask()
         {
             return View("TaskMake", new Tasks());
         }
+        public ActionResult TaskList()
+        {
+            List<Tasks> tasks = (List<Tasks>)taskRep.GetTasks();
+            return View("Tasks",tasks);
+        }
+        [HttpGet]
+        public ActionResult TaskInfo(int taskId)
+        {
+            Tasks task=taskRep.GetTask(taskId);
+            if (task is null)
+            {
+                return NotFound();
+            }
+            return View("Task", task);
+        }
+        [HttpGet]
+        public ActionResult UpdateTask(int taskId)
+        {
+            Tasks task = taskRep.GetTask(taskId);
+            if (task is null)
+            {
+                return NotFound();
+            }
+            return View("UpdateTask", task);
+        }
+        [HttpGet]
+        public ActionResult UpdateGame(int gameId)
+        {
+            GameViewModel game= new GameViewModel { game = gameRep.GetGame(gameId), tasks = (List<Tasks>)taskRep.GetTasks() };
+            if (game is null)
+            {
+                return NotFound();
+            }
+            return View("UpdateGame", game);
+        }
+        [HttpPost]
         public ActionResult CreateTaskClick(string text, string answer)
         {
             Tasks task = new Tasks() { Text = text, Answer = answer };
@@ -53,14 +88,13 @@ namespace WebApplication1.Controllers
             ViewBag.Message2 = "Задача создана";
             return View("TaskMake");
         }
-        public ActionResult UpdateTaskClick(int id, string text, string answer)
+        [HttpPut]
+        
+        public async Task<ActionResult> UpdateTaskClick(int id,  string Text,string Answer)
         {
             Tasks task = taskRep.GetTask(id);
-            if (task is null)
-            {
-                ViewBag.Message = "Задача не существует";
-                return View("Tasks");
-            }
+            task.Text = Text;
+            task.Answer = Answer;
             if (!task.Validation())
             {
                 ViewBag.Message = "Некоторые поля не заполнены";
@@ -69,60 +103,47 @@ namespace WebApplication1.Controllers
             taskRep.UpdateTask(task);
             taskRep.Save();
             ViewBag.Message2 = "Задача создана";
-            return View("TaskEdit");
+            return View("UpdateTask",task);
         }
-        public ActionResult DeleteTaskClick(int taskId)
+        [HttpDelete]
+        public ActionResult DeleteTask(int id)
         {
-            Tasks task = taskRep.GetTask(taskId);
-            if (task is null)
-            {
-                ViewBag.Message = "Задача не существует";
-                return View("Tasks");
-            }
+            Tasks task = taskRep.GetTask(id);
             taskRep.DeleteTask(task);
             taskRep.Save();
             ViewBag.Message = "Задача удалена";
-            return View("Tasks");
-        }
-        public ActionResult AddGame()
-        {
-            return View("GameMake");
-        }
-        public ActionResult CancelMakeGame()
-        {
-            CurrentGame = new Game();
-            return View("GameMake", CurrentGame);
+            return View("Tasks",taskRep.GetTasks());
         }
         [HttpPost]
-        public ActionResult CreateGameClick(string Name, DateTime StartDate,DateTime StartTime, int Lenga)
+        public ActionResult CreateGameClick(string Name, DateTime StartDate,DateTime StartTime, int Lenga,List<int> tasks)
         {
-            if (CurrentGame.Tasks.Count == 0)
+            Game game = new Game();
+            if (tasks.Count == 0)
             {
                 ViewBag.Message = "Задачи не выбраны";
-                return View("GameMake");
+                return View("GameMake", taskRep.GetTasks());
             }
-            CurrentGame.Name = Name;
-            CurrentGame.StartData = StartDate.AddHours(StartTime.Hour).AddMinutes(StartTime.Minute).AddSeconds(StartTime.Second);
-            CurrentGame.Lenga = Lenga;
-            if (!CurrentGame.Validation())
+            game.TasksAmount = tasks.Count;
+            for (int i=0;i<tasks.Count;i++)
+                game.Tasks.Add(taskRep.GetTask(tasks[i]));
+            game.Name = Name;
+            game.StartData = StartDate.AddHours(StartTime.Hour).AddMinutes(StartTime.Minute).AddSeconds(StartTime.Second);
+            game.Lenga = Lenga;
+            if (!game.Validation())
             {
                 ViewBag.Message = "Некоторые поля неверно заполнены";
-                return View("Admin", "GameMake");
+                return View( "GameMake", taskRep.GetTasks());
             }
-            gameRep.CreateGame(CurrentGame);
+            game.StartData = game.StartData.ToUniversalTime();
+            gameRep.CreateGame(game);
             gameRep.Save();
-            CurrentGame = new Game();
-            return View("GameMake");
+            ViewBag.Message2 = "Игра создана";
+            return View("GameMake",taskRep.GetTasks());
         }
         [HttpPut]
         public ActionResult UpdateGameClick(int gameId, string GameName,int Lenga,DateTime StartDate,DateTime StartTime)
         {
             Game game = gameRep.GetGame(gameId);
-            if (game is null)
-            {
-                ViewBag.Message = "Игра не существует";
-                return View("Games");
-            }
             if (game.Started())
             {
                 ViewBag.Message = "Игра уже началась";
@@ -141,36 +162,17 @@ namespace WebApplication1.Controllers
             return View("Games");
         }
         [HttpDelete]
-        public ActionResult DeleteGameClick(int gameId)
+        public ActionResult DeleteGameClick(int ID)
         {
-            Game game = gameRep.GetGame(gameId);
-            if (game is null)
-            {
-                ViewBag.Message = "Игра не существует";
-                return View("Games");
-            }
+            Game game = gameRep.GetGame(ID);
             if (game.Ongoing())
             {
                 ViewBag.Message = "Игра идёт";
-                return View("Games");
+                return View("Main");
             }
             gameRep.DeleteGame(game);
             gameRep.Save();
-            return View("Games");
-        }
-        public ActionResult Cancelmaketask()
-        {
-            return View("GameMake", CurrentGame);
-        }
-        public ActionResult Tasks()
-        {
-            return View("Tasks");
-        }
-        [HttpGet]
-        public ActionResult TaskInfo(int taskID)
-        {
-            Tasks t = taskRep.GetTask(taskID);
-            return View("Task", t);
+            return Ok();
         }
     }
 }

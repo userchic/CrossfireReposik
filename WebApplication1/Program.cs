@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Net;
 using WebApplication1.Models;
+using WebApplication1.Reposiotories;
+using WebApplication1.Abstractions;
+using GameHubSpace;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +30,17 @@ builder.Services.AddAuthentication("Cookies")
     });
 builder.Services.AddAuthorization();
 
+builder.Services.AddScoped<RoleRepository>();
+builder.Services.AddScoped<ClassRepository>();
+builder.Services.AddScoped<IGameRepository, GameRepository>();
+builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IParticipationsRepository, ParticipationsRepository>();
+builder.Services.AddScoped<IShotRepository, ShotsRepository>();
+builder.Services.AddScoped<IUserGameStatusRepository, UserGameStatusRepository>();
+builder.Services.AddScoped<ITeamRepository, TeamRepository>();
+builder.Services.AddScoped<ISent_AnswersRepository, Sent_AnswersRepository>();
+
 var app = builder.Build();
 
 
@@ -45,8 +59,11 @@ app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+    endpoints.MapHub<GameHub>("game");
+});
 app.Run();

@@ -4,8 +4,9 @@ namespace WebApplication1.Abstractions
 {
     public interface ITeamRepository
     {
-        Teams GetTeam(int id);
-        ICollection<Teams> GetTeams();
+        Teams GetTeam(int teamId);
+        Teams GetTeamWithUsers(int teamId);
+        ICollection<Teams> GetTeams(int gameId);
         void CreateTeam(Teams teams);
         void UpdateTeam(Teams teams);
         void DeleteTeam(Teams teams);

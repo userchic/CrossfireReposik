@@ -1,4 +1,5 @@
-﻿using WebApplication1.Abstractions;
+﻿using Microsoft.EntityFrameworkCore;
+using WebApplication1.Abstractions;
 using WebApplication1.DataBase;
 using WebApplication1.Models;
 
@@ -15,13 +16,17 @@ namespace WebApplication1.Reposiotories
         {
             return _context.Teams.Find(id);
         }
-        public ICollection<Teams> GetTeams()
+        public Teams GetTeamWithUsers(int id)
         {
-            return _context.Teams.Select(x => x).ToList();
+            return _context.Teams.Include(x=>x.Users).First(x=>x.ID==id);
+        }
+        public ICollection<Teams> GetTeams(int gameId)
+        {
+            return _context.Teams.Where(x => x.GameID==gameId).ToList();
         }
         public Teams UserInGame(Users user,Game game)
         {
-            return _context.Teams.FirstOrDefault(x => x.GameID == game.ID && x.Users.Contains(user));
+            return _context.Teams.Include(x=>x.Users).FirstOrDefault(x => x.GameID == game.ID && x.Users.Contains(user));
         }
         public void CreateTeam(Teams Team)
         {
@@ -39,5 +44,12 @@ namespace WebApplication1.Reposiotories
         {
             _context.SaveChanges();
         }
+
+        public List<Users> GetUsers(int teamId)
+        {
+            return _context.Teams.Where(x=> x.ID==teamId).Include(x => x.Users).First().Users.ToList();
+        }
+
+
     }
 }

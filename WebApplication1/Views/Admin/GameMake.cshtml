@@ -1,17 +1,18 @@
-﻿@model WebApplication1.Models.Game
+﻿@model List<Tasks>
+
 @{
     ViewBag.Title = "GameMake";
 }
 <h2>Создание игры</h2>
-<div class="container">
-    @using (Html.BeginForm("AddGameClick", "Admin", FormMethod.Post))
+<div >
+    @using (@Html.BeginForm("CreateGameClick", "Admin", FormMethod.Post))
     {
-        <input id="GameName" name="GameName" placeholder="Название игры" type="text" autocomplete="on">
+        <input id="Name" name="Name" placeholder="Название игры" type="text" autocomplete="on">
 
         <br />
         <div>Дата проведения</div>
-        <input name=StartData data-val="true" data-val-date="Поле StartData должно содержать дату." data-val-required="Требуется поле StartData."
-               id="StartData"  placeholder="Дата проведения" type="date" autocomplete="on" value=@DateTime.Now><br />
+        <input name=StartDate data-val="true" data-val-date="Поле StartData должно содержать дату." data-val-required="Требуется поле StartData."
+               id="StartDate"  placeholder="Дата проведения" type="date" autocomplete="on" value=@DateTime.Now><br />
         <div>Длительность (мин)</div>
 
         <input id="Lenga" name="Lenga" value="0" placeholder="Длительность" type="number" autocomplete="on">
@@ -22,27 +23,30 @@
         <button type="submit">Создать игру</button>
         <button type="submit" formaction="/Admin/CancelMakeGame" value="Cancel">Отмена</button>
         <font color="red"><p>@ViewBag.Message</p></font>
-        <h1>Выберить задачи</h1>
-        @if (WebApplication1.Controllers.AdminController.db.Tasks.Count()>0)
-        {
-        <ul>
-            @foreach (WebApplication1.Models.Tasks task in WebApplication1.Controllers.AdminController.db.Tasks)
+        <font color="green"><p>@ViewBag.Message2</p></font>
+
+
+
+    @if (Model.Count() > 0)
+    {
+    <ul>
+            @foreach (WebApplication1.Models.Tasks task in Model)
             {
-                <li>
-                    <div>Текст задачи: @task.Text</div>
-                    <br />
-                    <div>Ответ:@task.Answer</div>
-                    <br />
-                    @Html.Hidden("TaskID", task.ID)
-                    <Button type="submit" formaction="/Admin/AddTaskToNewGame" name="tasks" />
-                </li>
+            <li>
+                <div>Текст задачи: @task.Text</div>
+                <br />
+                <div>Ответ:@task.Answer</div>
+                <br />
+                <input type="checkbox" id="tasks" name="tasks" value="@task.ID"  > Выбрать
+            </li>
             }
 
-            </ul>
-        }
-        else
-    {<p>Задач в системе нет</p>}
-
+    </ul>
     }
+    else
+    {
+    <p>Задач в системе нет</p>
+    }
+}
 </div>
 

@@ -54,7 +54,6 @@ namespace WebApplication1.DataBase
         {
             modelBuilder.Entity<Users>().HasKey("Login");
             modelBuilder.Entity<Shots>().HasOne(x => x.TargetTeam).WithMany(x => x.Shots);
-
         }
     }
 }
