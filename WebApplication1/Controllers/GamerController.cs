@@ -12,6 +12,7 @@ using WebApplication1.Abstractions;
 using WebApplication1.GamerViewModels;
 using System.Security.Claims;
 using WebApplication1.Reposiotories;
+using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace WebApplication1.Controllers
 {
@@ -32,7 +33,9 @@ namespace WebApplication1.Controllers
 		public IUserGameStatusRepository userGameStatusRep;
 		public IParticipationsRepository participationsRep;
 		public ISent_AnswersRepository sentAnswersRep;
-		public GamerController(ITaskRepository tasks,
+		public IGameManager gameManager;
+		public GamerController(IGameManager manager,
+			ITaskRepository tasks,
 			IGameRepository games,
 			ITeamRepository teams,
 			IUserRepository users,
@@ -49,6 +52,7 @@ namespace WebApplication1.Controllers
 			participationsRep = participations;
 			sentAnswersRep = sent_Answers;
 			shotRep = shots;
+			gameManager = manager;
 		}
 		public ActionResult Index()
 		{
@@ -86,13 +90,15 @@ namespace WebApplication1.Controllers
         {
             return View("Results");
         }
-		public ActionResult CreateTeam(int gameID)
+		public ActionResult CreateTeam(int gameId)
 		{
-			return View("TeamMake", gameID);
+			return View("TeamMake", gameId);
 		}
 		public ActionResult Main()
 		{
-			List<Game> games= (List<Game>)gameRep.GetGames();
+			List<Game> games= gameRep.GetGames().ToList();
+			foreach (Game game in games)  
+				game.StartData = game.StartData.ToLocalTime();
 			return View("Main",games);
 		}
 		[HttpPost]
@@ -103,16 +109,21 @@ namespace WebApplication1.Controllers
 			if (game.Ongoing())
 			{
 				ViewBag.Message = "Игра началась";
-				return View("TeamCreate");
+				return View("TeamCreate",gameId);
 			}
 			Users user = GetUser();
 			Teams team = Teams.Create(  teamName,gameId, new List<Users>() { user } );
 			if (!team.Validation())
 			{
 				ViewBag.Message = "Название команды не введено";
-				return View("TeamCreate");
+				return View("TeamCreate", gameId);
 			}
-			teamRep.CreateTeam(team);
+            if (teamRep.UserInGame(user, game) is not null)
+            {
+                ViewBag.Message = "Пользователь уже в другой команде";
+                return View("TeamMake",gameId);
+            }
+            teamRep.CreateTeam(team);
 			teamRep.Save();
 			ViewBag.Message = "Команда создана";
 			return TeamsList(gameId);
@@ -170,7 +181,7 @@ namespace WebApplication1.Controllers
             if (game.Started())
 			{
 				ViewBag.Message = "Игра началась";
-				return View("TeamUpdate");
+				return Main();
 			}
 			Users user = GetUser();
             if (teamRep.UserInGame(user, game) is not null)
@@ -187,7 +198,7 @@ namespace WebApplication1.Controllers
 			team.UsersAmount++;
 			teamRep.UpdateTeam(team);
 			teamRep.Save();
-			return View("Game", game);
+			return Team(teamId);
 		}
 		[HttpPost]
 		public ActionResult LeaveTeam(int teamId)
@@ -222,13 +233,19 @@ namespace WebApplication1.Controllers
 			if (game.Started())
 			{
 				ViewBag.Message = "Игра началась, нельзя уходить";
-				return View();//переход к текущей игре TO DO
+				return Main();//переход к текущей игре TO DO
 			}
 			team.Users.Remove(user);
 			team.UsersAmount--;
+			if (team.UsersAmount == 0)
+			{
+				teamRep.DeleteTeam(team);
+				teamRep.Save();
+				return Main();
+            }
 			teamRep.UpdateTeam(team);
 			teamRep.Save();
-			return View();
+			return Team(teamId);
 		}
 		[HttpPost]
 		public ActionResult JoinGame(int gameId)
@@ -242,13 +259,16 @@ namespace WebApplication1.Controllers
 			Users user = GetUser();
 			if (!game.Ongoing())
 			{
+				if (!game.Started())
 				ViewBag.Message = "Игра не началась";
+				if (game.Ended())
+				ViewBag.Message = "Игра закончилась";
 				return Main();
-			}
+            }
 			UserParticipation participation =participationsRep.GetParticipation(gameId, user.Login);
 			if(participation is not null)
 			{
-				if(participation.UserGameStatus.ID==2)
+				if(participation.UserGameStatus.ID!=3)
                 {
                     participation.UserGameStatus = userGameStatusRep.GetStatus(1);
                     participationsRep.UpdateParticipation(participation);
@@ -261,7 +281,7 @@ namespace WebApplication1.Controllers
 				ViewBag.Message = "Пользователь не в команде этой игры";
 				return Main();
 			}
-			UserGameStatus status = userGameStatusRep.GetStatus(0);
+			UserGameStatus status = userGameStatusRep.GetStatus(1);
 			participationsRep.CreateParticipation(new UserParticipation { GameID = gameId, User = GetUser(), UserGameStatus = status });
             participationsRep.Save();
 
@@ -290,8 +310,8 @@ namespace WebApplication1.Controllers
 				}
 				inGameTasks.Add(task);
 			}
-			DateTime gameEnd = game.StartData.AddMinutes(game.Lenga);
-			GameModel model = new GameModel() { tasks = inGameTasks, teams = (List<Teams>)game.Teams, time = TimeOnly.FromTimeSpan(DateTime.Now - gameEnd) };
+			DateTime gameEnd = game.StartData.ToLocalTime().AddMinutes(game.Lenga);
+			GameModel model = new GameModel() {teamID=team.ID, tasks = inGameTasks, teams = (List<Teams>)game.Teams, time = TimeOnly.FromTimeSpan(gameEnd - DateTime.Now) };
 			return View("Game", model);
 		}
 
@@ -314,83 +334,128 @@ namespace WebApplication1.Controllers
 			participation.UserGameStatus = userGameStatusRep.GetStatus(2);
 			participationsRep.UpdateParticipation(participation);
 			participationsRep.Save();
-			return View("Main", null);
+			return Main();
 		}
 
 		[HttpPost]
-		public ActionResult AnswerClick(int ID, string answer,int teamID)
+		public ActionResult AnswerClick(int taskId, string answer,int teamId,int targetTeamId)
 		{
-			//InGameTask Task = gameProcess.Tasks.FirstOrDefault(task => task.ID == ID);
-			//if (Task is null)
-			//{
-			//	ViewBag.Message = "Задача не существует в этой игре";
-			//	return View("Game", Task);
-			//}
-			//if (Task.SentAnswer)
-			//{
-			//	ViewBag.Message = "Задача уже отвечена";
-			//	return View("Game");
-			//}
-			//Game game = gameRep.GetGame(gameProcess.ID);
-			//Teams team = teamRep.UserInGame(GetUser(), game);
-			//Sent_Answers ans = new Sent_Answers() { Answer=answer,SentTime=DateTime.UtcNow,TaskID=ID,TeamID=team.ID,UserLogin=GetUser().Login,};
-			//if (!ans.Validation())
+			Users user=GetUser();
+			UserParticipation participation=participationsRep.GetCurrentParticipation(user.Login);
+			if (participation is null)
+				return Json(new {isNotParticipating = true });
+			Tasks task = taskRep.GetTask(taskId);
+			if (task is null)
+				return NotFound();
+			Teams team = teamRep.GetTeam(teamId);
+			if (team is null)
+				return NotFound();
+			Game game = gameRep.GetGame(participation.GameID);
+			if (game is null)
+				return NotFound();
+			if (!game.Ongoing())
+				return GameResults();
+			if (teamRep.GetTeams(game.ID).Where(x => x.ID == teamId).Count() == 0)
+				return Json(new { UnknownTeam = true });
+			if (!game.Tasks.Contains(task))
+                return Json(new { UnknownTask = true });
+			if (sentAnswersRep.GetAnswerByTeamAndTask(taskId, teamId) is not null)
+				return Json(new { AnswerAllReadySent = true });
+			Sent_Answers sentAnswer = new Sent_Answers() {TaskID=taskId ,Answer=answer, UserLogin = user.Login,TeamID=teamId };
+			Shots shot=null;
+
+            if (task.Answer==answer)
+            {
+				team.ShotsAmount++;
+                shot = new Shots() {TargetTeamID=targetTeamId };
+				if (rand1.Next() > 0.5)
+				{
+					shot.isSuccessful = true;
+					team.Hits++;
+                    Teams targetTeam = teamRep.GetTeam(targetTeamId);
+					targetTeam.Score--;
+					teamRep.UpdateTeam(targetTeam);
+				}
+				else
+					team.Misses++;
+                sentAnswer.Correctness = true;
+				sentAnswer.SentTime = DateTime.Now.ToUniversalTime();
+				sentAnswersRep.CreateAnswer(sentAnswer);
+				sentAnswersRep.Save();
+				shot.AnswerID = sentAnswer.ID;
+				team.SolvedTasks++;
+				team.Score++;
+                shotRep.CreateShot(shot);
+                shotRep.Save();
+            }
+            else
 			{
-				ViewBag.Message = "Ответ не указан";
-				//return View("Answer", Task);
-			}
-
-
-			//if (Task.Answer == answer)
-			//{
-			//	team.Score++;
-			//	teamRep.UpdateTeam(team);
-			//	return View("Shoot");
-			//}
-
-			return View("Game");
+                sentAnswersRep.CreateAnswer(sentAnswer);
+                team.MistakedTasks++;
+            }
+			teamRep.UpdateTeam(team);
+			teamRep.Save();
+			gameManager.RecieveAnswer(game.ID, sentAnswer, shot);
+            return Json(new { });
 		}
-		//[HttpPost]
-		//public ActionResult ShootClick(int targetId,int answerId)
-		//{
-		//	Sent_Answers answer= sentAnswersRep.GetAnswer(answerId);
-		//	if (answer is null)
-		//	{
-		//		return NotFound();
-		//	}
-		//	Tasks task = sentAnswersRep.GetTask(answer);
-		//	if (task.Answer!=answer.Answer)
-		//	{
-		//		ViewBag.Message = "Ответ был неправильный";
-		//		return View("Game");
-		//	}
-		//	Shots shot=shotRep.GetShot(answerId);
-		//	if (shot is not null)
-		//	{
-		//		ViewBag.Message = "Выстрел уже произведён";
-		//		return View("Game");
-		//	}
-		//	Teams team = teamRep.GetTeam(targetId);
-		//	if (team is null)
-		//	{
-		//		ViewBag.Message = "Целевая команда не существует";
-		//		return View("Game");
-		//	}
-		//	double pick = rand1.NextDouble();
-		//	Teams targetTeam= teamRep.GetTeam(targetId);
-		//	team.ShotsAmount++;
-		//	if (pick > 0.5)
-		//	{
-		//		targetTeam.Score--;
-		//		team.Hits++;
-		//	}
-		//	teamRep.UpdateTeam(team);
-		//	teamRep.UpdateTeam(targetTeam);
-		//	teamRep.Save();
-		//	return View("Game");
-		//}
-		
-		private Users GetUser() => userRep.GetUser(User.Identity.Name);
-		public static bool TeamIncludesUser(ClaimsPrincipal User, Teams team) => team.Users.First(x=>x.Login==User.Identity.Name) is not null;
+
+        private ActionResult GameResults()
+        {
+			Users user = GetUser();
+			UserParticipation participation = participationsRep.GetCurrentParticipation(user.Login);
+			if (participation is null)
+				return Main();
+			Game game=gameRep.GetGame(participation.GameID);
+			if (game is null)
+				return Main();
+			ResultsModel model= new ResultsModel();
+			model.game = game;
+			Teams team=teamRep.UserInGame(user, game);
+			model.UserTeamID = team.ID;
+			return View("Results", model);
+        }
+
+        //[HttpPost]
+        //public ActionResult ShootClick(int targetId,int answerId)
+        //{
+        //	Sent_Answers answer= sentAnswersRep.GetAnswer(answerId);
+        //	if (answer is null)
+        //	{
+        //		return NotFound();
+        //	}
+        //	Tasks task = sentAnswersRep.GetTask(answer);
+        //	if (task.Answer!=answer.Answer)
+        //	{
+        //		ViewBag.Message = "Ответ был неправильный";
+        //		return View("Game");
+        //	}
+        //	Shots shot=shotRep.GetShot(answerId);
+        //	if (shot is not null)
+        //	{
+        //		ViewBag.Message = "Выстрел уже произведён";
+        //		return View("Game");
+        //	}
+        //	Teams team = teamRep.GetTeam(targetId);
+        //	if (team is null)
+        //	{
+        //		ViewBag.Message = "Целевая команда не существует";
+        //		return View("Game");
+        //	}
+        //	double pick = rand1.NextDouble();
+        //	Teams targetTeam= teamRep.GetTeam(targetId);
+        //	team.ShotsAmount++;
+        //	if (pick > 0.5)
+        //	{
+        //		targetTeam.Score--;
+        //		team.Hits++;
+        //	}
+        //	teamRep.UpdateTeam(team);
+        //	teamRep.UpdateTeam(targetTeam);
+        //	teamRep.Save();
+        //	return View("Game");
+        //}
+
+        private Users GetUser() => userRep.GetUser(User.Identity.Name);
+		public static bool TeamIncludesUser(ClaimsPrincipal User, Teams team) => team.Users.FirstOrDefault(x=>x.Login==User.Identity.Name) is not null;
     }
 }

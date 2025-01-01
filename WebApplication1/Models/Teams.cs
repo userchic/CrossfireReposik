@@ -16,6 +16,7 @@ namespace WebApplication1.Models
         public int ShotsAmount { get; set; } = 0;
         public int Hits { get; set; } = 0;
         public int Misses { get; set; } = 0;
+        public ICollection<Sent_Answers> Answers { get; set; }
         public ICollection<Users> Users { get; set; }
         public ICollection<Shots> Shots { get; set; }
 

@@ -53,6 +53,7 @@ namespace WebApplication1.DataBase
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Users>().HasKey("Login");
+            modelBuilder.Entity<Shots>().HasOne(x => x.Sent_answer).WithOne(x => x.Shot).HasForeignKey<Shots>(x=>x.AnswerID);
             modelBuilder.Entity<Shots>().HasOne(x => x.TargetTeam).WithMany(x => x.Shots);
         }
     }

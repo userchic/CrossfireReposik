@@ -21,5 +21,9 @@ namespace WebApplication1.Reposiotories
         {
             return _context.Shots.Where(x => x.AnswerID == answerId ).Include(x=>x.Sent_answer).First();
         }
+        public void Save()
+        {
+            _context.SaveChanges(); 
+        }
     }
 }

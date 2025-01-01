@@ -9,7 +9,6 @@ namespace WebApplication1.Models
     {
         public string Text { get; set; }
         public bool SentAnswer { get; set; }
-        public bool Solved { get; set; }
         public bool Result { get; set; }
         public bool ShotResult { get; set; }
         public int ID { get; set; }

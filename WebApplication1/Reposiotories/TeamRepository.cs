@@ -16,9 +16,9 @@ namespace WebApplication1.Reposiotories
         {
             return _context.Teams.Find(id);
         }
-        public Teams GetTeamWithUsers(int id)
+        public Teams GetTeamWithUsers(int teamId)
         {
-            return _context.Teams.Include(x=>x.Users).First(x=>x.ID==id);
+            return _context.Teams.Include(x=>x.Users).First(x=>x.ID==teamId);
         }
         public ICollection<Teams> GetTeams(int gameId)
         {

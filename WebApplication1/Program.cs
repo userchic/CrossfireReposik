@@ -9,6 +9,7 @@ using WebApplication1.Models;
 using WebApplication1.Reposiotories;
 using WebApplication1.Abstractions;
 using GameHubSpace;
+using WebApplication1.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +42,9 @@ builder.Services.AddScoped<IUserGameStatusRepository, UserGameStatusRepository>(
 builder.Services.AddScoped<ITeamRepository, TeamRepository>();
 builder.Services.AddScoped<ISent_AnswersRepository, Sent_AnswersRepository>();
 
+builder.Services.AddSignalR();
+builder.Services.AddSingleton<IGameManager, GameManager>();
+
 var app = builder.Build();
 
 
@@ -64,6 +68,6 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
-    endpoints.MapHub<GameHub>("game");
+    endpoints.MapHub<GameHub>("/gameHub");
 });
 app.Run();

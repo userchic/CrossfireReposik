@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\GameHub.js",
+      "PackagePath": "staticwebassets\\js\\GameHub.js"
+    },
+    {
       "Id": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

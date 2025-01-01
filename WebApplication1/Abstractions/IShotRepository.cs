@@ -6,5 +6,6 @@ namespace WebApplication1.Abstractions
     {
         Shots GetShot(int answerId);
         void CreateShot(Shots shot);
+        void Save();
     }
 }

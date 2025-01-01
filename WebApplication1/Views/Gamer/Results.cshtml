@@ -1,68 +1,63 @@
-﻿@model WebApplication1.Models.Teams
+﻿@model WebApplication1.GamerViewModels.ResultsModel
 @{
     ViewBag.Title = "Results";
 }
-@* @{ if (WebApplication1.Controllers.GamerController.game.Player.Score > WebApplication1.Controllers.GamerController.game.RNG.Score) *@
-    { <h1>Победа</h1> }
-    else
+<h1>Информация о прошедшей игре</h1>
+<p> Название игры: @Model.game.Name</p>
+<p> Время начала: @Model.game.StartData</p>
+<p> Длительность:@Model.game.Lenga мин</p>
+<p> Количество задач: @Model.game.TasksAmount</p>
+<tabbox>
+    <tabs>
+    @foreach (Teams team in Model.game.Teams)
     {
-        @*  if (WebApplication1.Controllers.GamerController.game.Player.Score < WebApplication1.Controllers.GamerController.game.RNG.Score) 
-        { <h1>Поражение</h1> }
-        else
-        { <h1>Ничья</h1>}  *@
+        <tab label="@team.Name" />
     }
-}
-<table class="bc-table bc-table-web" width="45%" align="center">
-    <thead>
-        <tr>
-            <th align="center">Вы</th>
-            <th align="center">Противник</th>
+    </tabs>
+    @foreach(Teams team in Model.game.Teams)
+    {
+        <tabpanel>
+        <p>Название команды: @team.Name</p>
+        <p>Количество выстрелов по ответам команды: @team.ShotsAmount</p>
+        <p>Попаданий выстрелов: @team.Hits</p>
+        <p>Промахов выстрелов @team.Misses</p>
+        <p>Ошибочно решенных задач: @team.MistakedTasks</p>
+        <p>Правильно решенных задач: @team.SolvedTasks</p>
+        <p>Очков набрано :@team.Score</p>
+        <p>Членов команды: @team.UsersAmount</p>
+        <ul>
+                @foreach (Sent_Answers answer in team.Answers)
+                {
+                    <li>
+                        Отправленный ответ: @answer.Answer
+                        @if (answer.Correctness)
+                        {
+                            <p>Правильный ответ</p>
+                        }
+                        else
+                        {
+                            <p>Неправильный ответ</p>
+                        }
+                        Отправил пользователь: @answer.UserLogin
+                        Время и дата отправки: @answer.SentTime
 
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td align="left">
-                <div class="container" title="Вы">
-                    <p>Накопленный результат: @Model.Score
-                        @*<p>
-                        Задач: @WebApplication1.Controllers.GamerController.game.Tasks.Count
-                        <div class="container" title="Решено">
-                            <p>Решено верно:  @WebApplication1.Controllers.GamerController.game.Player.SolvedTasks
-                            <p>Решено неверно: @WebApplication1.Controllers.GamerController.game.Player.MistakedTasks
-                        </div>
-                    <p>Нет ответа: @{
-                                    int num = WebApplication1.Controllers.GamerController.game.Tasks.Count - WebApplication1.Controllers.GamerController.game.Player.SolvedTasks - WebApplication1.Controllers.GamerController.game.Player.MistakedTasks;
-                                }@num
-                    <p>
-                        Выстрелов:@WebApplication1.Controllers.GamerController.game.Player.Shots
-                        <div class="container" title="Решено">
-                            <p>Попаданий: @WebApplication1.Controllers.GamerController.game.Player.Hits
-                            <p>Промахов: @WebApplication1.Controllers.GamerController.game.Player.Misses 
-                        </div>*@
-                </div>
-            </td>
-            <td align="left">
-                <div class="container" title="Враг">
-                 @*    <p>Накопленный результат: @WebApplication1.Controllers.GamerController.game.RNG.Score</p>
-                    <p>Задач: @WebApplication1.Controllers.GamerController.game.Tasks.Count</p>
-                    <div class="container" title="Решено">
-                        <p>Решено верно:  @WebApplication1.Controllers.GamerController.game.RNG.SolvedTasks</p>
-                        <p>Решено неверно: @WebApplication1.Controllers.GamerController.game.RNG.MistakedTasks</p>
-                    </div>
-                    <p>Нет ответа: @{
-                            num = WebApplication1.Controllers.GamerController.game.Tasks.Count - WebApplication1.Controllers.GamerController.game.RNG.SolvedTasks - WebApplication1.Controllers.GamerController.game.RNG.MistakedTasks;
-                        }@num</p>
-                    <p>Выстрелов:@WebApplication1.Controllers.GamerController.game.RNG.Shots</p>
-                    <div class="container" title="Решено">
-                        <p>Попаданий: @WebApplication1.Controllers.GamerController.game.RNG.Hits</p>
-                        <p>Промахов: @WebApplication1.Controllers.GamerController.game.RNG.Misses</p> 
-                    </div>*@
-                </div>
-            </td>
-        </tr>
-    </tbody>
-</table>
+                        @if (@answer.Shot.isSuccessful)
+                            {
+                                <p>Успешное попадание</p>
+                            }
+                            else
+                            {
+                                <p>Промах</p>
+                            }
+                        Название окманды цели выстрела: @answer.Shot.TargetTeam.Name
+                        
+                        
+                    </li>
+                }
+        </ul>
+        </tabpanel>
+    }
+</tabbox>
 @using (Html.BeginForm("Main", "Home"))
 { <button type="submit" value="Вернуться на главную" />}
 

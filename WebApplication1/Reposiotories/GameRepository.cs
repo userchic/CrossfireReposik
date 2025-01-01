@@ -14,7 +14,7 @@ namespace WebApplication1.Reposiotories
         }
         public Game GetGame(int id)
         {
-            return _context.Games.Where(x => x.ID == id).Include(x=>x.Tasks).ThenInclude(x=>x.UsersAnswers).ThenInclude(x=>x.Shot).First();
+            return _context.Games.Where(x => x.ID == id).Include(x=>x.Teams).Include(x=>x.Tasks).ThenInclude(x=>x.UsersAnswers).ThenInclude(x=>x.Shot).First();
         }
         public ICollection<Game> GetGames()
         {

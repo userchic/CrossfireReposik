@@ -6,35 +6,7 @@
     <title>@ViewData["Title"] - WebApplication4</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <script>
-        function settimer() {
-            if (document.title !== "Results") {
-                setInterval(function () {
-                    let seconds = document.getElementById("seconds");
-                    let minutes = document.getElementById("time");
-                    if (Number.parseInt(seconds.value) > 0)
-                        seconds.value = Number.parseInt(seconds.value) - 1;
-                    else {
-                        if (seconds.value !== null & seconds.value !== "")
-                            $.ajax({
-                                url: "/Game/EnemySendAnswer",
-                                success: function (result) {
-                                    document.getElementById("PlayerScore").innerText = result["PScore"];
-                                    document.getElementById("EnemyScore").innerText = result["EScore"];
-                                },
-                                type: "POST",
-                                datatype: "json"
-                            })
-                        seconds.value = 59;
-                        minutes.innerText = Number.parseInt(minutes.innerText) - 1;
-                        if (Number.parseInt(minutes.innerText) === 0) {
-                            document.location.href = "/Game/ShowResults";
-                        }
-                    }
-                }, 1000)
-            };
-        }
-    </script>
+
 
 </head>
 <body>
@@ -49,7 +21,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li> @Html.ActionLink("Отказаться от игры", "Main", "Home") </li>
+                    <li> 
+
+                    </li>
                     <li style="width:150px"> <br /><font color="white">Ваши очки:</font> <font id="PlayerScore" color="white" width="50px">         </font></li>
                     @* <li style="width:150px"><br /><font color="white">Очки противника: </font><font id="EnemyScore" color="white"> @WebApplication1.Controllers.GamerController.game.RNG.Score         </font> </li> *@
                     <li style="width:150px"><br /><font color="white">Оставшееся время: </font><font id="time" color="white">    </font><font color="white">мин </font></li>
@@ -58,8 +32,11 @@
             </div>
         </div>
     </div>
-    <script>settimer();</script>
     <div class="container body-content">
+        @Html.BeginForm("LeaveGame", "Gamer", FormMethod.Post)
+        {
+            <button type="submit">Отказаться от игры</button>
+        }
         <br />
         @RenderBody()
         <hr />

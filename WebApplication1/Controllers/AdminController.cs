@@ -21,11 +21,15 @@ namespace WebApplication1.Controllers
          Random rand1 = new Random();
          Random rand2 = new Random();
         public ITaskRepository taskRep;
+		public IGameManager gameManager;
         public IGameRepository gameRep;
-        public AdminController(ITaskRepository tasks, IGameRepository games)
+        public AdminController(IGameManager manager,
+            ITaskRepository tasks,
+            IGameRepository games)
         {
             taskRep = tasks;
             gameRep = games;
+            gameManager = manager;
         }
         public ActionResult Index()
         {
@@ -43,6 +47,13 @@ namespace WebApplication1.Controllers
         {
             List<Tasks> tasks = (List<Tasks>)taskRep.GetTasks();
             return View("Tasks",tasks);
+        }
+        public ActionResult Main()
+        {
+            List<Game> games = gameRep.GetGames().ToList();
+            foreach (Game game in games)
+                game.StartData = game.StartData.ToLocalTime();
+            return View("Main", games);
         }
         [HttpGet]
         public ActionResult TaskInfo(int taskId)
@@ -90,7 +101,7 @@ namespace WebApplication1.Controllers
         }
         [HttpPut]
         
-        public async Task<ActionResult> UpdateTaskClick(int id,  string Text,string Answer)
+        public ActionResult UpdateTaskClick(int id,  string Text,string Answer)
         {
             Tasks task = taskRep.GetTask(id);
             task.Text = Text;
@@ -138,6 +149,7 @@ namespace WebApplication1.Controllers
             gameRep.CreateGame(game);
             gameRep.Save();
             ViewBag.Message2 = "Игра создана";
+            gameManager.AddGame(game);
             return View("GameMake",taskRep.GetTasks());
         }
         [HttpPut]
@@ -159,6 +171,7 @@ namespace WebApplication1.Controllers
             }
             gameRep.UpdateGame(game);
             gameRep.Save();
+            gameManager.UpdateGame(StartDate, Lenga, gameId);
             return View("Games");
         }
         [HttpDelete]
@@ -168,10 +181,11 @@ namespace WebApplication1.Controllers
             if (game.Ongoing())
             {
                 ViewBag.Message = "Игра идёт";
-                return View("Main");
+                return Main();
             }
             gameRep.DeleteGame(game);
             gameRep.Save();
+            gameManager.RemoveGame(game.ID); 
             return Ok();
         }
     }

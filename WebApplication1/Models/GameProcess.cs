@@ -11,7 +11,18 @@ namespace WebApplication1.Models
     public class GameProcess
     {
         public int ID { get; set; }
-        DateTime StartData { get; set; }
+        DateTime startTime;
+        DateTime StartData 
+        { 
+            get 
+            {
+                return startTime.ToLocalTime();
+            }
+            set 
+            { 
+                startTime = value;
+            } 
+        }
         public int Lenga { get; set; }
         
         public IGameManager manager { get; set; }
@@ -19,7 +30,10 @@ namespace WebApplication1.Models
         //public GameState State { get; set; }
 
         public List<InGameTask> Tasks;
+        public List<Sent_Answers> answers = new List<Sent_Answers>();
         public List<Teams> Teams;
+
+        public int EndGameAmountOfAnswers;
 
         private Timer timerToStart;
         public Timer timerToEnd;
@@ -29,12 +43,19 @@ namespace WebApplication1.Models
             ID = gameId;
             Tasks = tasks;
             Teams = teams;
+            EndGameAmountOfAnswers = Teams.Count * Tasks.Count;
             SetStartTimer(startData,lenga);
+        }
+        public void AddAnswer(Sent_Answers answer)
+        {
+            answers.Add(answer);
+            if (answers.Count == EndGameAmountOfAnswers)
+                manager.RemoveEndedGame(ID);
         }
         public void StartGame(object? gameId)
         {
             TimeSpan dueTime = StartData.AddMinutes(Lenga) - DateTime.Now;
-            TimerCallback callback = manager.RemoveGame; callback += EndGame;
+            TimerCallback callback = manager.RemoveEndedGame; callback += EndGame;
 
             timerToEnd = new Timer(callback, ID, TimeSpan.Zero, dueTime);
             timerToStart.Dispose();
@@ -49,8 +70,14 @@ namespace WebApplication1.Models
         {
             StartData = startData;
             Lenga = lenga;
-            TimeSpan dueTime = startData - DateTime.Now;
+            TimeSpan dueTime = StartData - DateTime.Now;
             timerToStart = new Timer(StartGame, null, TimeSpan.Zero, dueTime);
+        }
+
+        public void StopTimers()
+        {
+            timerToEnd.Dispose();
+            timerToStart.Dispose();
         }
     }
     //public enum GameState

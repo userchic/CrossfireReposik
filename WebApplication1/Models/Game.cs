@@ -28,15 +28,15 @@ namespace WebApplication1.Models
         {
             return !Name.Trim().IsNullOrEmpty()
                 && Lenga > 0
-                && StartData > DateTime.Now;
+                && StartData.ToLocalTime() > DateTime.Now;
         }
         public bool Started()
         {
-            return StartData <= DateTime.Now? true : false;
+            return StartData.ToLocalTime() <= DateTime.Now ? true : false;
         }
         public bool Ended()
         {
-            return StartData.AddMinutes(Lenga) >= DateTime.Now ? false : true;
+            return StartData.ToLocalTime().AddMinutes(Lenga) >= DateTime.Now ? false : true;
         }
         public bool Ongoing()
         {

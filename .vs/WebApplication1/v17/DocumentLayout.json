@@ -3,152 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\controllers\\gamercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\gamercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\services\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\services\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\gamerviewmodels\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\gamerviewmodels\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\ingameuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\ingameuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\abstractions\\igamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\abstractions\\igamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\gameprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\wwwroot\\js\\gamehub.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\js\\gamehub.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\wwwroot\\js\\site2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\wwwroot\\js\\site2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\results.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\results.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\shoot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\shoot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\reposiotories\\shotsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\reposiotories\\shotsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\abstractions\\ishotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\abstractions\\ishotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\reposiotories\\sent_answersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\reposiotories\\sent_answersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\reposiotories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\reposiotories\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\reposiotories\\participationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\reposiotories\\participationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\reposiotories\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\reposiotories\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\reposiotories\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\reposiotories\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\gamerviewmodels\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\gamerviewmodels\\gamemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\shots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\shots.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\controllers\\gamercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\gamercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\sent_answers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\sent_answers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\shared\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\main.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\reposiotories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\reposiotories\\teamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\gamemake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\gamemake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\abstractions\\igamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\abstractions\\igamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\shared\\_layout_game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout_game.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\abstractions\\iparticipationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\abstractions\\iparticipationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\userparticipation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\userparticipation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\team.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\team.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\teams.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\teams.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\models\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\teams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\gamerviewmodels\\teamsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\gamerviewmodels\\teamsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\gamer\\teammake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\gamer\\teammake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\taskmake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\taskmake.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\views\\admin\\updategame.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\admin\\updategame.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|c:\\users\\user\\desktop\\webapplication1\\webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6FC512C3-FBB8-4D73-BE5D-411F6A224001}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -158,472 +62,176 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "WebApplication1\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
-              "RelativeToolTip": "WebApplication1\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-28T10:29:41.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Services\\GameManager.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Services\\GameManager.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Services\\GameManager.cs",
-              "RelativeToolTip": "WebApplication1\\Services\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T16:15:28.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameHub.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GameHub.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\GameHub.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GameHub.cs",
-              "RelativeToolTip": "WebApplication1\\GameHub.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T13:34:14.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GameModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GamerViewModels\\GameModel.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\GamerViewModels\\GameModel.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GamerViewModels\\GameModel.cs",
-              "RelativeToolTip": "WebApplication1\\GamerViewModels\\GameModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T12:34:52.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InGameUser.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameUser.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\InGameUser.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\InGameUser.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\InGameUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T12:10:46.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GamerController.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\GamerController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\GamerController.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\GamerController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\GamerController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAwHYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T18:46:34.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IGameManager.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Abstractions\\IGameManager.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Abstractions\\IGameManager.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Abstractions\\IGameManager.cs",
-              "RelativeToolTip": "WebApplication1\\Abstractions\\IGameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-28T08:56:21.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "GameProcess.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\GameProcess.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Models\\GameProcess.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\GameProcess.cs",
               "RelativeToolTip": "WebApplication1\\Models\\GameProcess.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAWwDQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T12:10:34.203Z",
+              "WhenOpened": "2025-01-01T14:47:16.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
+              "Title": "Main.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\Main.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\Main.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\Main.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\Main.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T18:01:29.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Game.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Game.cshtml",
               "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Game.cshtml",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Game.cshtml",
               "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Game.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T14:28:47.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "site2.js",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\site2.js",
-              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\js\\site2.js",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\site2.js",
-              "RelativeToolTip": "WebApplication1\\wwwroot\\js\\site2.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-27T14:22:02.544Z",
+              "WhenOpened": "2024-12-31T18:01:24.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEoAAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-26T10:29:59.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Results.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Results.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Results.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Results.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Results.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T14:15:51.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAArwBUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:50:52.466Z",
+              "WhenOpened": "2024-12-31T17:40:04.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Shoot.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Shoot.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Shoot.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Shoot.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Shoot.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-27T14:15:50.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Sent_AnswersRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\Sent_AnswersRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Reposiotories\\Sent_AnswersRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\Sent_AnswersRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Reposiotories\\Sent_AnswersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T06:57:56.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RoleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\RoleRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Reposiotories\\RoleRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\RoleRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Reposiotories\\RoleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T06:57:44.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ShotsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\ShotsRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Reposiotories\\ShotsRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\ShotsRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Reposiotories\\ShotsRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAD4vxkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T10:54:12.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GameRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\GameRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Reposiotories\\GameRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\GameRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Reposiotories\\GameRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T06:56:51.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ClassRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\ClassRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Reposiotories\\ClassRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\ClassRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Reposiotories\\ClassRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T06:56:44.8Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IShotRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Abstractions\\IShotRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Abstractions\\IShotRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Abstractions\\IShotRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Abstractions\\IShotRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T10:54:27.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Shots.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Shots.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Shots.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Shots.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Shots.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T10:53:10.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Sent_Answers.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Sent_Answers.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Sent_Answers.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Sent_Answers.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Sent_Answers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T10:51:54.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IGameRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Abstractions\\IGameRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Abstractions\\IGameRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Abstractions\\IGameRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Abstractions\\IGameRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T19:06:09.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "IParticipationsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Abstractions\\IParticipationsRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Abstractions\\IParticipationsRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Abstractions\\IParticipationsRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Abstractions\\IParticipationsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T18:42:12.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ParticipationsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\ParticipationsRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Reposiotories\\ParticipationsRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\ParticipationsRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Reposiotories\\ParticipationsRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBQAAACUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T13:22:47.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "UserParticipation.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserParticipation.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\UserParticipation.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\UserParticipation.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\UserParticipation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T19:21:34.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TeamRepository.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\TeamRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Reposiotories\\TeamRepository.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Reposiotories\\TeamRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Reposiotories\\TeamRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T18:30:30.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Teams.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Teams.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Teams.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Teams.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Teams.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T18:08:05.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "TeamsModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GamerViewModels\\TeamsModel.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\GamerViewModels\\TeamsModel.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GamerViewModels\\TeamsModel.cs",
-              "RelativeToolTip": "WebApplication1\\GamerViewModels\\TeamsModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T18:00:33.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Team.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Team.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\Team.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\Team.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\Team.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T17:39:18.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "TeamMake.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\TeamMake.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Gamer\\TeamMake.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Gamer\\TeamMake.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Gamer\\TeamMake.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T17:38:40.769Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "TaskMake.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\TaskMake.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\TaskMake.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\TaskMake.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Admin\\TaskMake.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-22T16:57:19.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Teams.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Teams.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Teams.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Teams.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Teams.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T12:11:58.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Game.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Models\\Game.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Models\\Game.cs",
-              "RelativeToolTip": "WebApplication1\\Models\\Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T12:10:31.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "UpdateGame.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\UpdateGame.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\UpdateGame.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\UpdateGame.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Admin\\UpdateGame.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAC8AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T17:39:17.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "GameMake.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\GameMake.cshtml",
-              "RelativeDocumentMoniker": "WebApplication1\\Views\\Admin\\GameMake.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Admin\\GameMake.cshtml",
-              "RelativeToolTip": "WebApplication1\\Views\\Admin\\GameMake.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T09:32:06.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 4,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\AdminController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAewJcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAswK0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T09:32:50.356Z"
+              "WhenOpened": "2024-12-31T17:28:53.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GameHub.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GameHub.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\GameHub.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GameHub.cs",
+              "RelativeToolTip": "WebApplication1\\GameHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T17:43:23.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GamerController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\GamerController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\GamerController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Controllers\\GamerController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\GamerController.cs",
+              "ViewState": "AgIAAIUBAAAAAAAAAAAUwGQBAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T17:33:54.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameHub.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\GameHub.js",
+              "RelativeDocumentMoniker": "WebApplication1\\wwwroot\\js\\GameHub.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\wwwroot\\js\\GameHub.js",
+              "RelativeToolTip": "WebApplication1\\wwwroot\\js\\GameHub.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-31T17:22:07.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GamerViewModels\\GameModel.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\GamerViewModels\\GameModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\GamerViewModels\\GameModel.cs",
+              "RelativeToolTip": "WebApplication1\\GamerViewModels\\GameModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T11:27:59.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Services\\GameManager.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Services\\GameManager.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Services\\GameManager.cs",
+              "RelativeToolTip": "WebApplication1\\Services\\GameManager.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwC4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-01T10:57:37.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T18:01:35.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout_Game.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout_Game.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-31T18:01:37.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApplication1\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\WebApplication1\\WebApplication1\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApplication1\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-31T21:39:42.063Z",
+              "EditorCaption": ""
             }
           ]
         },

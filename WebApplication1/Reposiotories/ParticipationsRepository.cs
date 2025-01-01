@@ -14,11 +14,11 @@ namespace WebApplication1.Reposiotories
         }
         public UserParticipation GetParticipation(int gameId,string login)
         {
-            return _context.Participations.FirstOrDefault(x => x.GameID == gameId&& x.User.Login==login);
+            return _context.Participations.Select(x=>x).Include(x=>x.UserGameStatus).FirstOrDefault(x => x.GameID == gameId&& x.User.Login==login);
         }
         public UserParticipation GetCurrentParticipation(string login)
         {
-            return _context.Participations.Select(x=>x).Include(x=>x.UserGameStatus).Where(x => x.UserGameStatus.ID == 1 || x.UserGameStatus.ID == 2).First();
+            return _context.Participations.Select(x=>x).Include(x=>x.UserGameStatus).Where(x => x.UserGameStatus.ID == 1).First();
         }
         public void CreateParticipation(UserParticipation participation)
         {

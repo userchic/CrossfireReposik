@@ -10,10 +10,10 @@ namespace WebApplication1.Models
     {
         public int ID { get; set; }
         public string Answer { get; set; } = "";
-        public int? TaskID { get; set; }
         public string? UserLogin { get; set; }
+        public int TaskID { get; set; }
         public int? TeamID { get; set; }
-        public int? ShotID { get; set; }
+        public bool Correctness { get; set; }
         public DateTime SentTime { get; set; }
         public Tasks Task { get; set; }
         public Users User { get; set; }

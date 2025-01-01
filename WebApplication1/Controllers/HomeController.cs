@@ -23,8 +23,10 @@ namespace WebApplication1.Controllers
 		public IGameRepository gameRep;
         public ActionResult Main()
         {
-            List<Game> games = (List<Game>)gameRep.GetGames();
-            return View("Main",games);
+            List<Game> games = gameRep.GetGames().ToList();
+            foreach (Game game in games)
+                game.StartData = game.StartData.ToLocalTime();
+            return View("Main", games);
         }
         RoleRepository roleRep;
         ClassRepository classRep;
@@ -111,8 +113,10 @@ namespace WebApplication1.Controllers
 
         public ActionResult Index()
         {
-            List<Game> games = db.Games.Select(x => x).ToList();
-            return View("Main",games);
+            List<Game> games = gameRep.GetGames().ToList();
+            foreach (Game game in games)
+                game.StartData = game.StartData.ToLocalTime();
+            return View("Main", games);
         }
         public static bool UserIsAdmin(ClaimsPrincipal User) => User.IsInRole("Администратор");
         public static bool UserIsPlayer(ClaimsPrincipal User) =>  User.IsInRole("Игрок");

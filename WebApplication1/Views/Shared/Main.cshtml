@@ -2,13 +2,14 @@
 @{
     ViewBag.Title = "Main";
 }
-<h2>Главная</h2>
+<h2>Главная</h2>   
+@ViewBag.Message
 <table class="bc-table bc-table-web" width="60%" align="center" border="1">
     <thead>
         <tr>
             <th align="center" >Название игры</th>
-            <th align="left" style="width: 90px;">Дата начала</th>
-            <th align="right" style="width: 50px;">Время начала</th>
+            <th align="left" style="width: 120px;">Дата начала</th>
+            <th align="right" style="width: 120px;">Время начала</th>
             <th align="right" style="width: 50px;">Длительность(мин)</th>
             @if (WebApplication1.Controllers.HomeController.UserIsPlayer(User))
             {
@@ -56,9 +57,9 @@
 </table>
 
 <script>
-    async function Delete (ID)
+    async function Delete (GameID)
     {
-        const response = await fetch(`/Admin/DeleteGameClick/`+ID, {
+        const response = await fetch(`/Admin/DeleteGameClick/`+GameID, {
             method: "Delete",
         }
         )
